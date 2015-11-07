@@ -1,0 +1,59 @@
+\section{Logging into the system}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{The user has an internet browser running and
+opened the system website.}
+  \item [NORMAL:]
+    \textit{The user clicks on the login-button located at a prominent position
+on the website. A dialogue window opens up and the user has to fill his
+e-mail-address and password into the form. After submitting the systems
+window interface opens up in the browserwindow. Initially there are no Plugins
+open. If the user had active Plugins during his last logout, these
+Plugins will be opened again.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{The connection to the database is damaged
+and therefor the login information can not be confirmed. So there will be an error message for the user.\\ 
+The user types in a wrong e-mail address or a wrong password. In this case a message appears, that the e-mail address or the password is wrong.\\
+The user is not registered to the System. In this case an error message appears, that the e-mail address or the password is wrong.\\ 
+The connection to the internet is lost.
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{The user is logged in and able to use the system.}
+\end{description}
+
+\section{Starting a Video-Chat-Session}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{The user has an internet browser running and
+opened the system website, where he is logged in as registered user.}
+  \item [NORMAL:]
+    \textit{The user opens a new window in the browser and starts the video-chat-plugin. For this he pushes a button in the middle of the new window where a context menue appears and the user can choose out of many plugins which he want to open. After the video plugin is started, the user can invite another user to his this plugin and can set the permissions of the other users. So he can choose if they are allowed to add plugins or not, or if they can kick other users or invite some. This starts a session. To invite other users to this plugin there are two different ways. First he can push on a addressbook button so that he can see his addressbook and can choose an contact or group to chat with. In the second way he searchs over an field shown in the video plugin another user via his e-mail address. By choosing a user he has to give permissions to the user like described above. After he invited a vew people to his chat, he must wait for their acception. While waiting the user heres a telephone ring. If a member accept the invitation the ringing stopps and the users see each other in the video plugin. If more than one user accepts in the video plugin window appears different views. Each view for another user.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{Maybe noone answer the invitation. In this case the ringing stopps after 2 minutes and the user has the opportunity to restart the session.\\
+		In another case the internet connection of another user will be lost. In this case he leaves automatically the chat. In the same manner the others will see a lost internet connection of your one. By restarting the system the session will be lost. So the others have to invite the lost people again. So in the case, that the session admin looses his connection the whole session will be closed.\\
+		A third possibility is a server crash. In this case the session is lost and has to be new initialized.
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{The user has a video chat with a arbitrary number of people.}
+\end{description}
+
+\section{Adding plugins to a session}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{The user has an internet browser running and
+opened the system website, where he is logged in as registered user and has opened a session with other users.}
+  \item [NORMAL:]
+    \textit{The uses starts in another window in his browser a new plugin. For example the digital whiteboard. Now he wants to add the whiteboard to the session. If the user is the session admin this is very simple. He click on the button share in the plugin field of the whiteboard and chooses out of a list of opened sessions the wished session. In an up comming context menue he has to give permissions to the session members. There he can give the permission to watch or to watch and draw. After this the plugin is added to the session and the session members will see a new window open on her screen with the whiteboard on it. If the user who wants to add is no session admin there are two possibilities. In the first case he has the right to add plugins. So this is like he is session admin. If he has no rights to add plugins a error occupies, that he has not the necessary permissions.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{
+		The session can crash while adding. In this case nothing happen, what means that the plugin won't add to the session.\\
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{The user has added a new plugin to the session.}
+\end{description}
