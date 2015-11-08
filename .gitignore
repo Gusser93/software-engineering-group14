@@ -145,3 +145,4 @@ pythontex-files-*/
 /temp.txt
 *.glsdefs
 *.sh
+/input.tex
