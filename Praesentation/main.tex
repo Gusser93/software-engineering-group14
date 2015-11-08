@@ -1,0 +1,83 @@
+\documentclass{beamer}
+\usepackage[ngerman]{babel}			%Deutsche Umlaute und Umbrüche
+\usepackage[utf8]{inputenc}			%utf8 Kodierung
+\usepackage{amsmath, amsfonts, amssymb} %Mathepackete schaden nie
+\usetheme{Dresden}
+\usecolortheme{beaver}
+\usefonttheme{professionalfonts}
+\setbeamertemplate{footline}[frame number]
+\title[WWWEKA]{World Wide WEKA}
+\subtitle{Requirement Document}
+\author[C. Heckmann\and C. Stricker\and D. Klopp\and M. Vieth]{Christian Heckmann\and Christian Stricker\and David Klopp\and Markus Vieth}
+\date[01.01.1111]{01. Januar 1111}
+\subject{Software engineering}
+%Link zum Beamer-Userguid: ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+\begin{document}
+	
+	\frame{
+		\titlepage
+	}
+	
+	\frame[label=IV]{
+		\frametitle{Inhaltsverzeichnis}
+		\tableofcontents
+		[pausesections]
+	}
+	\section[Beispiele]{Beispiel Folien}
+	%Testfolien
+	\subsection[Listen]{Beispiele für Listen}
+	\begin{frame}[<+->][t]{Listen}{Untertitel}
+		\begin{itemize}
+			\item eins
+			\item zwei
+		\end{itemize}
+		\begin{enumerate}
+			\item eins
+			\item zwei
+		\end{enumerate}
+		\begin{description}
+			\item[erstens] 1.
+			\item[zweitens] 2.
+		\end{description}
+	\end{frame}
+	\subsection[Blöcke]{Beispiele für Blöcke}
+	\subsubsection[Nomal]{Beispiele für normale Blöcke}
+	\begin{frame}{Blöcke}
+		
+		\begin{block}{Titel eines einfachen Blocks}
+			Text eines einfachen Blocks.
+		\end{block}
+		\begin{exampleblock}{Titel eines Beispiel-Blocks}
+			Text eines Beispiel-Blocks.
+		\end{exampleblock}
+		\begin{alertblock}{Titel eines Alarm-Blocks}
+			Text eines Alarm-Blocks.
+		\end{alertblock}
+	\end{frame}
+	\subsubsection[Mathe]{Beispiele für Mathe-Blöcke}
+	\begin{frame}{Mathe-Blöcke}
+		\begin{proof}
+			Ein Beweis
+		\end{proof}
+		\begin{definition}
+			Eine Definition
+		\end{definition}
+		\begin{lemma}[Lemma titel -- toll]
+			ein Lemma
+		\end{lemma}
+		\begin{theorem}[M -- Nach Markus]
+			Ein Theorem
+		\end{theorem}
+	\end{frame}
+	\subsection[Animation]{Beispiel für Animationen}
+	\begin{frame}
+		\begin{itemize}
+			\item Einleitung
+			\item<2-> daher
+			\item<2-|alert@3-> aber Achtung!
+			\item<3-> also so und so
+			\item<4-> Schluss
+		\end{itemize}
+	\end{frame}
+	
+\end{document}
