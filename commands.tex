@@ -5,7 +5,11 @@
 	{\value{urcounter}<9}		%if counter kleiner 9
 	{\paragraph{UR00\theurcounter}} %dann zwei Nullen drann hängen
 	{\paragraph{UR0\theurcounter}}  %sonst eine Null, der Fall keine Null wird ignoriert, da er nicht auftreten wird
-\addtocounter{urcounter}{1}}		%Erhöht den Zähler um 1
+\addtocounter{urcounter}{1}}%Erhöht den Zähler um 1
+%\begin{description}
+%	\item[Statement] \textit{#1}
+%	\item[Priority] \textit{#2}
+%\end{description}}		
 
 %NFR
 \newcounter{nfrcounter} %Erzeugt neuen Counter für URs
