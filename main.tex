@@ -1,6 +1,6 @@
 \documentclass{book}
 \usepackage{hyperref}
-%\usepackage[ngerman]{babel}
+\usepackage[ngerman]{babel}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[toc]{glossaries}
@@ -13,10 +13,7 @@
 %Sollte sich sonst niemand melden, würde ich vorschlagen, machst du, David, die non-functional und ich, Markus, die functional
 %\newcommand*{\leadzeros}[1]{\ifnum\value{#1}<10 00\else0\fi\arabic{#1}}
 
-\newcounter{urcounter}
-\newcommand{\ur}{\ifthenelse{\value{urcounter}<10}{
-UR00\theurcounter}{UR0\theurcounter}
-\addtocounter{urcounter}{1}}
+\input{commands}
 
 
 \setcounter{secnumdepth}{5}
