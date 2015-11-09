@@ -1,5 +1,7 @@
 # software-engineering-group14
-
+##WICHTIG!
+Wenn es zu Problemen kommt, ersteinmal den ganzen Müll der bei der Erstellung des PDFs entsteht löschen, das hilft oft.
+##Notizen
 Zum einrichten von TeXstudio oder TeXnicCenter unter Windows, siehe https://www.students.uni-mainz.de/mavieth/tutorial.html
 
 Git: https://github.com/Gusser93/software-engineering-group14
