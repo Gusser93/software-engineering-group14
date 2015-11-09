@@ -1,30 +1,38 @@
 %UR
 \newcounter{urcounter} %Erzeugt neuen Counter für URs
-\newcommand{\UR}{
+\newcommand{\UR}[2]{
 	\ifthenelse
 	{\value{urcounter}<9}		%if counter kleiner 9
 	{\paragraph{UR00\theurcounter}} %dann zwei Nullen drann hängen
 	{\paragraph{UR0\theurcounter}}  %sonst eine Null, der Fall keine Null wird ignoriert, da er nicht auftreten wird
-\addtocounter{urcounter}{1}}%Erhöht den Zähler um 1
-%\begin{description}
-%	\item[Statement] \textit{#1}
-%	\item[Priority] \textit{#2}
-%\end{description}}		
+\addtocounter{urcounter}{1}%Erhöht den Zähler um 1
+\begin{description}
+	\item[Statement] \textit{#1}
+	\item[Priority] \textit{#2}
+\end{description}}		
 
 %NFR
 \newcounter{nfrcounter} %Erzeugt neuen Counter für URs
-\newcommand{\NFR}{
+\newcommand{\NFR}[2]{
 	\ifthenelse
 	{\value{nfrcounter}<9}		%if counter kleiner 9
 	{\paragraph{NFR00\thenfrcounter}} %dann zwei Nullen drann hängen
 	{\paragraph{NFR0\thenfrcounter}}  %sonst eine Null, der Fall keine Null wird ignoriert, da er nicht auftreten wird
-	\addtocounter{nfrcounter}{1}}		%Erhöht den Zähler um 1
+	\addtocounter{nfrcounter}{1}		%Erhöht den Zähler um 1
+	\begin{description}
+		\item[Statement] \textit{#1}
+		\item[Priority] \textit{#2}
+	\end{description}}		
 
 %FR
 \newcounter{frcounter} %Erzeugt neuen Counter für URs
-\newcommand{\FR}{
+\newcommand{\FR}[2]{
 	\ifthenelse
 	{\value{frcounter}<9}		%if counter kleiner 9
 	{\paragraph{FR00\thefrcounter}} %dann zwei Nullen drann hängen
 	{\paragraph{FR0\thefrcounter}}  %sonst eine Null, der Fall keine Null wird ignoriert, da er nicht auftreten wird
-	\addtocounter{frcounter}{1}}		%Erhöht den Zähler um 1
+	\addtocounter{frcounter}{1}		%Erhöht den Zähler um 1
+	\begin{description}
+		\item[Statement] \textit{#1}
+		\item[Priority] \textit{#2}
+	\end{description}}		
