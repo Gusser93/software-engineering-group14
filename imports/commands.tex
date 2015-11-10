@@ -36,3 +36,10 @@
 		\item[Statement] \textit{#1}
 		\item[Priority] \textit{#2}
 	\end{description}}		
+	
+	\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={#6},#1
+  }
+  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
