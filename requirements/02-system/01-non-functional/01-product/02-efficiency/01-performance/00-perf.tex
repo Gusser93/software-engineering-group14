@@ -1,9 +1,13 @@
 \subsubsection{Performance Requirements}
 
-\NFR{The quality of video broadcast shall adjust to the
-    users internet connection.}{A}
+\NFR{Die Laufzeit von Algorithmen für anonyme Nutzer kann durch den \gls{admin} beschränkt werden.}{A}
 
 \NFR{Die minimalen Systemvoraussetzung ist: i7 CPU octal-core mit 32GB Ram und einem Linux Betriebssystem}{A}
 
-\NFR{The interaction between the conference participants
-    shall be in real-time.}{A}
+\NFR{Die Auswertung von Datensätzen erfolgt serverseitig, nicht auf dem Rechner des \gls{client}.}{A}
+
+\NFR{Bei zu vielen gleichzeitigen Anfragen auf den Server, werden diese in eine Warteschlange eingefügt.}{A}
+
+%@Markus fällt dir eine bessere Formulierung ein ? 
+\NFR{Das System soll \gls{clustering} unterstützen, um die Verfügbarkeit, wie auch die Rechenleistung zu erhöhen.}{B}
+

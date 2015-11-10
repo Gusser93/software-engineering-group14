@@ -1,14 +1,22 @@
 \subsection{Security Requirements}
-\NFR{Data transfer to and from the server must be
-    performed via an \gls{HTTPS} connection.}{A}
+\NFR{Sämtlicher Datenaustausch zwischen \gls{client} und \gls{server} soll über eine verschlüsselte \gls{ssl} Verbindung erfolgen.}{A}
 
-\NFR{Peer-to-Peer communication shall be encrypted with
-    a hybrid encryption algorithm.}{A}
+% Nachfragen
+\NFR{Alle hochgeladenen Daten sollen nicht verschlüsselt in einer Datenbank auf dem Server abgespeichert werden.}{A}
 
-\NFR{The invitation URL for guests shall only be usable once.}{A}
+\NFR{Für die Implementierung von Verschlüsslungsalgorithmen soll auf \gls{opensource} Projekte zurückgegriffen werden, wie z.B. \gls{openssl}.}{A} 
 
-\NFR{Passwords are stored on the server in text/plain,
-    but hashed with a random seed.}{A}
+% Nachfragen
+\NFR{Benutzerpasswörter müssen mindestens 8 Zeichen lang sein und aus Groß-, Kleinbuchstaben, sowie Zahlen bestehen.}{A}
 
-\NFR{All data (shared data and session recordings) is
-    stored unencrypted on the server.}{A}
+% Nachfragen
+\NFR{Benutzerpasswörter werden verschlüsselt auf dem Server gespeichert.}
+
+% Nachfragen
+\NFR{Die Zugriffsrechte von \glspl{Plugin} sollen über eine \gls{sandbox} beschränkt werden.}{A}
+
+% Muss das hier rein ? 
+\NFR{Jedes Modell soll über eine eindeutige URI verfügbar sein.}{A}
+
+
+
