@@ -26,15 +26,15 @@
 
 %FR
 \newcounter{frcounter} %Erzeugt neuen Counter für URs
-\newcommand{\FR}[2]{
+\newcommand{\FR}[3]{
 	\ifthenelse
 	{\value{frcounter}<9}		%if counter kleiner 9
 	{\paragraph{FR00\thefrcounter}} %dann zwei Nullen drann hängen
 	{\paragraph{FR0\thefrcounter}}  %sonst eine Null, der Fall keine Null wird ignoriert, da er nicht auftreten wird
 	\addtocounter{frcounter}{1}		%Erhöht den Zähler um 1
 	\begin{description}
-		\item[Statement] \textit{#1}
-		\item[Priority] \textit{#2}
+		\item[Statement] \textit{#1 (siehe user requirement UR#2)}
+		\item[Priority] \textit{#3}
 	\end{description}}		
 	
 	\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
