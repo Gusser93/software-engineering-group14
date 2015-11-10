@@ -3,7 +3,8 @@
 \usepackage[ngerman]{babel}
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[toc]{glossaries}
+\usepackage[toc,acronym]{glossaries}
+\usepackage{xparse}
 
 %Für Kommentare
 %!!Wcihtig!! nur in UTF-8 kodieren!
@@ -29,16 +30,17 @@ WWWEKA -- World Wide WEKA} %Bis einer von euch auf einen besseren Namen kommt
 \makeglossaries
 
 \begin{document}
+
 \input{imports/glossary}
+
 \maketitle
-
-
-\printglossaries
 
 \tableofcontents
 
 
 
 \input{inputs}
+
+\printglossaries
 
 \end{document}
