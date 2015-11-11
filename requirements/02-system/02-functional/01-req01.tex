@@ -1,7 +1,16 @@
+%1
 \FR{Das System kann über \gls{REST} und \gls{HTTPS} bedient werden.}{001}{A}
 
+\FR{Die einzigen Vorraussetzungen zur Benutzung des Webservices soll eine bestehende Internetverbindung, sowie ein aktueller Browser sein.}{001}{A}
+
+\FR{Das System soll die folgenden Browser unterstützen: Firefox ab Version 41, Chrome ab Version 45, Opera 32, Internet Explorer 11}{001}{A}
+
+\FR{Das System soll über iOS ab Version 7.0, sowie über Android ab Version 4.0 über den integrierten Browser des jeweiligen Betriebssystems erreichbar sein.}{018, UR021, UR024}{A}
+
+\FR{Eine spezielle mobile Website muss nicht verfügbar sein}{001}{A}
 
 
+%2
 \FR{Bei gleichen Eingaben sollen gleiche Ergebnisse bzw. Vorhersagen generiert werden.}{002}{A}
 
 \FR{Die Funktionsfähigkeit der nicht vorimplementierten Algorithmen muss durch den \gls{admin} gewährleistet werden.}{002}{A}
@@ -9,43 +18,88 @@
 \FR{Bei gleichen Eingaben sollen gleiche Ergebnisse bzw. Vorhersagen generiert werden.}{002}{A}
 
 
-
+%3
 \FR{Das System soll das Hochladen von Daten ermöglichen, sowie das Festsetzen von Berechtigungen für Selbige.}{003}{A}
 
-\FR{Eine Validierung der Daten ist nicht notwendig.}{003}{A}
+\FR{Eine Validierung der hochgeladenen Daten ist nicht notwendig.}{003}{A}
 
 \FR{Das System generiert einen eindeutige \gls{URI} für jede Datei, über die der Nutzer auf jene zugreifen kann.}{003}{A}
 
 
-
+%4
 \FR{Die Datensätze sowie die Auswahl des Algorithmus erfolgt über eine tabellarisch angeordnete Eingabemaske.}{004}{A}
 
 \FR{Die eingegebenen Daten müssen nicht vom System auf ihre Richtigkeit geprüft werden.}{004}{A}
 
 
-
+%5
 \FR{Das System soll plattformübergreifend einsetzbar sein.}{005}{A}
 
 
-
+%6
 \FR{Das System soll Java \glspl{Interface} zur Erstellung von \glspl{Plugin} zur Verfügung stellen. Jedes Interface soll mindestens festlegen welche Datensätze das \gls{Plugin} verarbeiten kann und welche Rückgabewerte zu erwarten sind.}{006}{A}
 
 
-
-\FR{Das System soll die Registrierung von Nutzern über eine gültige E-Mail-Adresse, Benutzername und Passwort ermöglichen.}{007}{A}
-
-\FR{Das System soll eine Ansicht zur Benutzerverwaltung beinhalten, über die personenbezogene Daten und Einstellungen geändert werden können. Im Falle des \gls{admin} sollen weitere Konfigurationsoptionen für z.B. nicht registrierte Benutzer zur Verfügung gestellt werden.}{007}{A}
-
-\FR{Das System soll eine Ansicht zur Verwaltung der vom Nutzer hochgeladenen Daten beinhalten. Im Falle des \gls{admin} sollen sämtliche Dateien auf dem Sever verwaltet werden können.}{007/UR008}{A}
+%7
+\FR{Das System soll eine Ansicht zur Benutzerverwaltung beinhalten, über die personenbezogene Daten und Einstellungen geändert werden können. Im Falle des \gls{admin} sollen weitere Konfigurationsoptionen für z.B. \glspl{Gast} zur Verfügung gestellt werden.}{007}{A}
 
 
+%8
+\FR{Das System soll eine Ansicht zur Verwaltung der vom Nutzer hochgeladenen Daten beinhalten. Im Falle des \gls{admin} sollen sämtliche Dateien auf dem Sever verwaltet werden können.}{008}{A}
+
+
+%9
 \FR{Das System soll ein Standard \gls{Plugin} für die grafische Ausgabe von Algorithmen beinhalten.}{009}{A}
 
 \FR{Weitere grafische \glspl{Plugin} sollen nach der Überprüfung durch den \gls{admin} in das System integriert werden können.}{009}{A}
 
 
-
+%10
 \FR{Das System muss \gls{REST} konform sein, um die serverübergreifende Kommunikation zu gewährleisten.}{0010}{A}
+
+
+%11
+\FR{Das System soll die Registrierung von Nutzern über eine gültige E-Mail-Adresse, Benutzername und Passwort ermöglichen.}{011}{A}
+
+\FR{Bei der Registrierung neuer Benutzer soll vorher geprüft werden ob bereits ein Benutzer mit dem angegebenen Name oder der gleichen E-Mail Adresse existiert. Sollte dies zutreffen soll eine entsprechende Fehlermeldung ausgegeben werden.}{011}{A}
+
+
+%12
+\FR{Das System soll einen Gast Benutzer bereitstellen, der gleichzeitig mehrfach verwendet werden kann.}{012}{A}
+
+\FR{Der \gls{Gast} darf keinen Zugriff auf den Menüpunkte zur Verwaltung der Gruppen haben}{012}{A}
+
+
+%13
+\FR{Der \gls{admin} soll über das Einstellungsmenü die Möglichkeit haben die Größe des Datenuploads für \glspl{Gäste} über ein Eingabefeld zu beschränken.}{013}{A}
+
+\FR{Der \gls{admin} soll die Laufzeit von Algorithmen die der \gls{Gast} ausführt über das Einstellungsmenü auf eine definierte Höchstlaufzeit festlegen können. Die Laufzeit muss mindestens 10 Minuten betragen.}{013}{A}
+
+
+%14
+\FR{Der Nutzer soll über das Dateiverwaltungsmenü die Möglichkeit haben neue Pakete zu erstellen. Beim Erstellen des Pakets  soll er die Dateien, die jenes Paket beinhalten soll, auswählen können.}{014}{A}
+
+\FR{Der Nutzer soll in einem Untermenü "Pakete", der Dateiverwaltung, alle öffentlich zugänglichen, sowie seine eigenen Pakete einsehen und herunterladen können.}{014}{A}
+
+
+
+%15
+
+
+
+%16 
+
+
+
+%17
+\FR{Monatlich ist das System planmäßig für 10 Minuten nicht erreichbar um Backups zu erstellen.}{017}{A}
+
+\FR{Im Falle eines nicht planmäßigen Ausfalls des Systems soll der \gls{admin} über seine E-Mail-Adresse benachrichtigt werden.}{017}{A}
+
+\FR{Das System soll plattformunabhängig und nicht an spezifische Hardware gebunden sein, um eine schnelle Portierung der Software auf neue Server zu gewährleisten.}{017}{A}
+
+
+%18
 
 
 
@@ -154,12 +208,6 @@ are only valid for their current session.
 
 \FR{The system makes use of \gls{ICE}. ICE delivers techniques to establish connections to clients even they are behind a firewall or router. }{017}{A}
 
-\FR{The system supports the following
-      browsers:\\1. Chrome/Chromium X\\2. Firefox Y.\\ 3. Opera}{018}{A}
-
-\FR{The system supports at least one of the available browsers
-      for the following mobile operating systems:\\1. Android
-      2.1+\\2. iOS 5.0+\\No additional app (except perhaps browser) is needed.}{018, UR021, UR024}{A}
 
 \FR{The well defined plugin api ensures that every plugin offers ways to handle different rights and views.}{023}{A}
 
