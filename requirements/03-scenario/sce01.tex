@@ -1,59 +1,183 @@
-\section{Logging into the system}
+\section{Im System registrieren}
 \begin{description}
   \item [INITIAL ASSUMPTION:]
-    \textit{The user has an internet browser running and
-opened the system website.}
+    \textit{Der \gls{User}  hat einen Webbrowser und öffnet die Webseite.}
   \item [NORMAL:]
-    \textit{The user clicks on the login-button located at a prominent position
-on the website. A dialogue window opens up and the user has to fill his
-e-mail-address and password into the form. After submitting the systems
-window interface opens up in the browserwindow. Initially there are no Plugins
-open. If the user had active Plugins during his last logout, these
-Plugins will be opened again.}
+    \textit{Der \gls{User} benutzt den regestrieren-Button und gelangt zu einem Anmeldeformular. der \gls{User} gibt eine email-Adresse von sich und ein Passwort ein und verschickt diese Angaben via Button an das System. Das System verschcikt eine email an die eingegebene email-Adresse. Der \gls{User} muss diese Mail bestätigen, bevor sich dieser in das System einloggen kann. }
   \item [WHAT CAN GO WRONG:]
-    \textit{The connection to the database is damaged
-and therefor the login information can not be confirmed. So there will be an error message for the user.\\ 
-The user types in a wrong e-mail address or a wrong password. In this case a message appears, that the e-mail address or the password is wrong.\\
-The user is not registered to the System. In this case an error message appears, that the e-mail address or the password is wrong.\\ 
-The connection to the internet is lost.
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\
+Die email-Adresse hat nicht das richtige Format oder das Passwort genügt nicht dem festgelegten Standard. Der \gls{User} wird darüber informiert, das das Passwort oder die email-Adresse falsch angegeben wurden. Der \gls{User} kann beides erneut eingeben oder berichtigen.
 }
   \item [OTHER ACTIVITIES:]
     \textit{}
   \item [SYSTEM STATE ON COMPLETION:]
-    \textit{The user is logged in and able to use the system.}
+    \textit{Der \gls{User} hat die Bestätigungsmail erhalten und bestätigt und kann sich nun in das System einloggen.}
 \end{description}
 
-\section{Starting a Video-Chat-Session}
+\section{Einloggen ins System}
 \begin{description}
   \item [INITIAL ASSUMPTION:]
-    \textit{The user has an internet browser running and
-opened the system website, where he is logged in as registered user.}
+    \textit{Der \gls{User}  hat einen Webbrowser und öffnet die Webseite.}
   \item [NORMAL:]
-    \textit{The user opens a new window in the browser and starts the video-chat-plugin. For this he pushes a button in the middle of the new window where a context menue appears and the user can choose out of many plugins which he want to open. After the video plugin is started, the user can invite another user to his this plugin and can set the permissions of the other users. So he can choose if they are allowed to add plugins or not, or if they can kick other users or invite some. This starts a session. To invite other users to this plugin there are two different ways. First he can push on a addressbook button so that he can see his addressbook and can choose an contact or group to chat with. In the second way he searchs over an field shown in the video plugin another user via his e-mail address. By choosing a user he has to give permissions to the user like described above. After he invited a vew people to his chat, he must wait for their acception. While waiting the user heres a telephone ring. If a member accept the invitation the ringing stopps and the users see each other in the video plugin. If more than one user accepts in the video plugin window appears different views. Each view for another user.}
+    \textit{Der \gls{User}  klickt auf den Anmeldebutton oben rechts auf der Startseite der Webseite, woraufhin sich ein Anmeldefesnter öffnet. Der \gls{User}  gibt seine email-Adresse und sein Passwort ind die dafür vorgesehenen Textfelder.}
   \item [WHAT CAN GO WRONG:]
-    \textit{Maybe noone answer the invitation. In this case the ringing stopps after 2 minutes and the user has the opportunity to restart the session.\\
-		In another case the internet connection of another user will be lost. In this case he leaves automatically the chat. In the same manner the others will see a lost internet connection of your one. By restarting the system the session will be lost. So the others have to invite the lost people again. So in the case, that the session admin looses his connection the whole session will be closed.\\
-		A third possibility is a server crash. In this case the session is lost and has to be new initialized.
+    \textit{Der Server ist zur Zeit nicht erreichbar, eine Errormessage benachichtigt den \gls{User} , das die Website vorübergehend nicht verfügbar ist.\\
+Der \gls{User} hat eine nicht registrierte email-Adresse oder ein falsches Passwort eingegeben, woraufhin der \gls{User} über ein Dialogfenster gebeten wird, seine email-Adresse und oder sein Passwort erneut einzugeben.\\
+Die Internetverbindung ist unterbrochen.
+
 }
   \item [OTHER ACTIVITIES:]
     \textit{}
   \item [SYSTEM STATE ON COMPLETION:]
-    \textit{The user has a video chat with a arbitrary number of people.}
+    \textit{Der \gls{User} ist angemeldet und kann das System uneingeschränkt benutzen.}
 \end{description}
 
-\section{Adding plugins to a session}
+\section{Erstellen von \glspl{Modellen}
 \begin{description}
   \item [INITIAL ASSUMPTION:]
-    \textit{The user has an internet browser running and
-opened the system website, where he is logged in as registered user and has opened a session with other users.}
+    \textit{Der \gls{User} hat einen Webrowser, die Website geöffnet und ist eingeloggt.}
   \item [NORMAL:]
-    \textit{The uses starts in another window in his browser a new plugin. For example the digital whiteboard. Now he wants to add the whiteboard to the session. If the user is the session admin this is very simple. He click on the button share in the plugin field of the whiteboard and chooses out of a list of opened sessions the wished session. In an up comming context menue he has to give permissions to the session members. There he can give the permission to watch or to watch and draw. After this the plugin is added to the session and the session members will see a new window open on her screen with the whiteboard on it. If the user who wants to add is no session admin there are two possibilities. In the first case he has the right to add plugins. So this is like he is session admin. If he has no rights to add plugins a error occupies, that he has not the necessary permissions.}
+    \textit{Der \gls{User} klickt auf einen Button zum \gls{Model}le erstellen. Wenn die Seite geladen ist, lädt der \gls{User} einen \gls{Datensatz} in das System. Danach werden ihm verschiedene Algorithmen, passend zu dem \gls{Datensatz}, angeboten. Der \gls{User} wählt einen Algorithmus aus und stellt ein, wie viel des \gls{Datensatz}es benutzt werden soll, um das \gls{Model} zu trainieren. Der Rest des \gls{Datensatz}es wird zum Testen des \gls{Model}s benutzt. Mit dem Klick auf einen Startbutton wird das \gls{Model} erstellt. Falls der \gls{User} als \gls{Gast} eingeloggt ist, wird seine Anfrage niedrig priorisiert und ans Ende der Warteschlange eingefügt. Der \gls{Gast} muss warten, bis seine Anfrage bearbeitet wird.}
   \item [WHAT CAN GO WRONG:]
-    \textit{
-		The session can crash while adding. In this case nothing happen, what means that the plugin won't add to the session.\\
+    \textit{Die Verbindung zum Server wird unterbrochen. Der \gls{User} wird gebeten, die Webseite neu zu laden.\\
+Der hochgeladene \gls{Datensatz} ist unvollständig oder beschädigt. Der \gls{Datensatz} wird gelöscht und der \gls{User wird gebeten, ihn erneut hochzuladen.\\
+Wenn der \gls{User} als \gls{Gast} eingeloggt ist, kann seine Zeit beim erstellen des \gls{Model}s auf dem Server abgelaufen sein. Die Berechnung des \gls{Model}s wird gestoppt und ein Dialogfenster weißt den \gls{User} daraufhin, dass das Berechnen des \gls[{Model} zu lange braucht und seine Zeit auf dem Server aufgebraucht ist.\\
+Der Speicherbedarf des \gls{Datensatz}es oder des Algorithmus vom als \gls{Gast} angemeldeten \gls{User} überschreitet die für als \gls{Gast} angemeldeten \gls{User} festgelegte Obergrenze. Ein Dialogfenster benachichtigt den \gls{User}, der \gls{Datensatz} oder Algorithmus ist zu groß.}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Das Ergebnis des \gls{Model}s wird dem User sowohl in Textform als auch grafisch angezeigt und das \gls{Model} ist in der Datenbank gespeichert.
+}
+\end{description}
+
+\section{Menü \gls{Model}le gelangen}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Initial Assumption: Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet, sich eingeloggt und es wurde mindestens ein \gls{Model} erstellt.}
+  \item [NORMAL:]
+    \textit{Der \gls{User} Klickt auf einem Button und gelangt in das Menü Modelle verwalten.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Der \gls{User} ist im Menü \gls{Model}le bearbeiten und ihm werden alle für ihn verfügbaren \gls{Model}le angezeigt.}
+\end{description}
+
+\section{\gls{Model} verifizieren}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet, sich eingeloggt und es wurde mindestens ein \gls{Model} erstellt. Der \gls{User} ist im Menü \gls{Model}e verwalten.}
+  \item [NORMAL:]
+    \textit{Der \gls{User} klickt auf ein \gls{Model} und über ein \gls{dropdown-Liste} wählt er \gls{Model}-verifizieren. Eine neue Seite wird geladen under der \gls{User} lädt einen \gls{Datensatz} mit Eingaben und Ergebnissen hoch. Das Modell trifft auf Basis der Eingaben Vorhersagen, überprüft diese mit den richtigen Ergebnissen aus dem Datensatz und gibt eine Aussage über die Korrektheit des \gls{Model}s aus.
+}
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\
+Der hochgeladene \gls{Datensatz} ist unvollständig oder beschädigt. Der \gls{Datensatz} wird gelöscht und der \gls{User wird gebeten, ihn erneut hochzuladen.\\
+Der Speicherbedarf des \gls{Datensatz}es oder des Algorithmus vom als \gls{Gast} angemeldeten \gls{User} überschreitet die für als \gls{Gast} angemeldeten \gls{User} festgelegte Obergrenze.\\ Ein Dialogfenster benachichtigt den \gls{User}, der \gls{Datensatz} oder Algorithmus ist zu groß.}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Der \gls{User} bekommt eine Aussage über die Korrektheit des \gls{Model}s.}
+\end{description}
+
+\section{Ergebnisse vorhersagen}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet, sich eingeloggt und es wurde mindestens ein \gls{Model} erstellt. Der \gls{User} ist im Menü \gls{Model}e verwalten.}
+  \item [NORMAL:]
+    \textit{Der \gls{User} klickt auf ein \gls{Model} und über ein \gls{dropdown-Liste} wählt er vorhersagen aus. Eine neue Seite wird geladen und der \gls{User} lädt einen \gls{Datensatz} hoch. Mit dem Klick auf den Start-Button berechnet der Server mithilfe des \gls{Model}s Hervorsagen über den \gls{Datensatz}. }
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\
+Der hochgeladene \gls{Datensatz} ist unvollständig oder beschädigt. Der \gls{Datensatz} wird gelöscht und der \gls{User wird gebeten, ihn erneut hochzuladen.\\
+Der Speicherbedarf des \gls{Datensatz}es oder des Algorithmus vom als \gls{Gast} angemeldeten \gls{User} überschreitet die für als \gls{Gast} angemeldeten \gls{User} festgelegte Obergrenze.\\ Ein Dialogfenster benachichtigt den \gls{User}, der \gls{Datensatz} oder Algorithmus ist zu groß.}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Der \gls{User} bekommt sowohl in Textform als auch grafisch die Ergebnisse der Vorhersage über den \gls{Datensatz} angezeigt.}
+\end{description}
+
+\section{Rechte verwalten}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet, sich eingeloggt und es wurde mindestens ein \gls{Model} erstellt. Der \gls{User} ist im Menü \gls{Model}e verwalten.}
+  \item [NORMAL:]
+    \textit{Der \gls{User} klickt auf ein \gls{Model} und über ein \gls{dropdown-Liste} wählt er Rechte verwalten aus.  Eine neue Seite wird geladen und der \gls{User} wählt die Gruppe und die Rechte für die Gruppe für das ausgewählte \gls{Model} aus und speichert die Einstellung via Speicher-Button.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\
 }
   \item [OTHER ACTIVITIES:]
     \textit{}
   \item [SYSTEM STATE ON COMPLETION:]
-    \textit{The user has added a new plugin to the session.}
+    \textit{Die Rechte für die Gruppe ist gespeichert.}
 \end{description}
+
+\section{\gls{Model} löschen}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet, sich eingeloggt und es wurde mindestens ein \gls{Model} erstellt. Der \gls{User} ist im Menü \gls{Model}e verwalten.}
+  \item [NORMAL:]
+    \textit{Der \gls{User} selektiert ein \gls{Model} und via einer \gls{dropdown-Liste} wählt er \gls{Model} löschen aus.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\}
+  \item [OTHER ACTIVITIES:]
+    \textit{Markus ist Böse}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Das \gls{Model} ist gelöscht.}
+\end{description}
+
+\section{Paket erstellen}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet, sich eingeloggt und es wurde mindestens ein \gls{Model} erstellt. Der \gls{User} ist im Menü \gls{Model}e verwalten.}
+  \item [NORMAL:]
+    \textit{Der \gls{User} wählt ein oder mehrere \gls{Modelle} aus und wählt via \gls{dropdown-Liste} \gls{Paket} erstellen aus. Der \gls{User} gibt in ein Textfeld den Namen ein. } 
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\
+Das \gls{Paket} konnte nicht gespeichert werden. Der \gls{User} bekommt den Hinweiß, das \gls{Paket} erneut zu erstellen und zu speichern.\\
+Der Name der \gls{Gruppe} besitzt ungültige Zeichen, ist zu lang oder zu kurz. Der \gls{User} wird darüber informiert und kann erneut einen Namen eingeben.}
+  \item [OTHER ACTIVITIES:]
+    \textit{Tut nix Böses!}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Das \gls{Paket} ist abgespeichert und kann auf der \gls{Model} Seite gedownloadet oder für andere \gls{User} freigegeben werden.}
+\end{description}
+
+\section{Gruppen erstellen}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der \gls{User} hat einen Webbrowser, hat die Webseite geöffnet und sich eingeloggt}
+  \item [NORMAL:]
+    \textit{Der \gls{User} klickt auf einen Button und gelangt auf die Gruppenverwaltungsseite. Der \gls{User} betätigt einen "neue Gruppe"- Button und kann der Gruppe einen Namen geben. Dann wählt der \gls{User} eine Gruppe aus und mithilfe eines \gls{Suchfeld}s sucht der \gls{User} nach der email-Adresse, dessen, welcher in die Gruppe hinzugefügt werden soll. Durch  bestätigen wird der \gls{User} der Gruppe hinzugefügt.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{Die Internetverbindung wird unterbrochen.\\
+Der Server fällt aus. Der \gls{User} bekommt eine Nachricht, das der Server vorrübergehend nicht erreichbar ist und der \gls{User} wird gebeten, die Anfrage zu einem späteren Zeitpunkt zu wiederholen.\\
+Der \gls{User} ist nicht vorhanden. Der \gls{User} kann erneut einen anderen \gls{User} suchen.\\
+Der \gls{User} hat keine \gls{Gruppe} ausgewählt. Der \gls{User} wird daraufhin informiert.
+Der Name der \gls{Gruppe} besitzt ungültige Zeichen, ist zu lang oder zu kurz. Der \gls{User} wird darüber informiert und kann erneut einen Namen eingeben.}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Die \gls{Gruppe} wurde erstellt und der \gls{Gruppe} können Rechte für \gls{Pakete} vergeben werden.}
+\end{description}
+
+%
+%\section{}
+%\begin{description}
+  %\item [INITIAL ASSUMPTION:]
+    %\textit{}
+  %\item [NORMAL:]
+    %\textit{}
+  %\item [WHAT CAN GO WRONG:]
+    %\textit{}
+  %\item [OTHER ACTIVITIES:]
+    %\textit{}
+  %\item [SYSTEM STATE ON COMPLETION:]
+    %\textit{}
+%\end{description}
