@@ -1,14 +1,14 @@
 \documentclass{beamer}
 \usepackage[ngerman]{babel}			%Deutsche Umlaute und Umbrüche
 \usepackage[utf8]{inputenc}			%utf8 Kodierung
-\usepackage{amsmath, amsfonts, amssymb} %Mathepackete schaden nie
+\usepackage{amsmath, amsfonts, amssymb, ulem} %Mathepackete schaden nie
 \usetheme{Dresden}
 \usecolortheme{beaver}
 \usefonttheme{professionalfonts}
 \title[WWWEKA]{World Wide WEKA}
 \subtitle{Requirement Document}
 \author[C. Heckmann\and C. Stricker\and D. Klopp\and M. Vieth]{Christian Heckmann\and Christian Stricker\and David Klopp\and Markus Vieth}
-\date[01.01.1111]{01. Januar 1111}
+\date[\today]{\today}
 \subject{Software engineering}
 %Link zum Beamer-Userguid: ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf
 \begin{document}
@@ -24,19 +24,24 @@
 		[pausesections]
 	}
 	
-	\section[UR 1]{User Requirement Beispiel 1}
+	\section[UR021]{Beispiel 1: User Requirement 021}
 	\subsection[Statement]{Statement}
 	\begin{frame}{Statement}{Browser}
-		"Das System soll über alle gängigen Browser nutzbar sein (Desktop und Mobile): Firefox, Chrome, Opera, Internet Explorer."
+		\begin{block}{UR021}
+			"`Das System soll über alle gängigen Browser nutzbar sein (Desktop und Mobile): Firefox, Chrome, \sout{Opera,} Internet Explorer."'
+		\end{block}
+		\begin{alertblock}{Anmerkung:}
+			Der Support von Opera wurde nach Absprache mit dem Übungsgruppenleiter gestrichen.
+		\end{alertblock}
 	\end{frame}
 	
 	\subsection[Resultierende Fragen]{Resultierende Fragen}
 	\begin{frame}[<+->][t]{Resultierende Fragen}
 		\begin{itemize}		
 			\item Welche Browser werden aktuell verwendet?
+			\item Werden alle Plattformen abgedeckt (Smart Device, Desktop)?
 			\item Welche Browserversionen werden häufig eingesetzt?
 			\item Werden die benötigten Funktionen unterstützt (HTML5, JavaScript)?
-			\item Werden alle Plattformen abgedeckt (Smart Device, Desktop)?
 		\end{itemize}
 	\end{frame}
 	
@@ -44,7 +49,7 @@
 	\begin{frame}[t]{Browserversionen}
 		\begin{figure}
 \centering
-\includegraphics[width=1\linewidth]{../../../Downloads/StatCounter-browser_version-ww-monthly-201508-201510-bar}
+\includegraphics[width=0.9\linewidth]{./Bilder/StatCounter-browser_version-ww-monthly-201508-201510-bar}
 \label{fig:StatCounter-browser_version-ww-monthly-201508-201510-bar}
 \end{figure}
 
@@ -57,7 +62,7 @@
 				\begin{description}
 					\item<1->[4.7] 1,2\%
 					\item<1->[4.6] 0,6\%
-					\item<1->[4.5] 72,5\%
+					\item<1-|alert@2>[4.5] 72,5\%
 					\item<1->[4.4] 15,9\%
 					\item<1->[4.3] 3\%
 					\item<1->[4.2] 0,8\%
@@ -69,7 +74,7 @@
 					\begin{description}
 						\item<2->[FF 42] 1\%
 						\item<2->[FF 41] 9,2\%
-						\item<2->[FF 40] 64,1\%
+						\item<2-|alert@2>[FF 40] 64,1\%
 						\item<2->[FF 39] 5,3\%
 						\item<2->[FF 38] 6,8\%
 					\end{description}
@@ -83,41 +88,45 @@
 				
 				\item<1->[Internet Explorer] 6,4\%
 				\begin{description}
-					\item[IE 11] 65,6\%
-					\item[IE 10] 14\%
-					\item[IE 9] 14\%
-					\item[IE 8] 7,8\%
+					\item<1-|alert@3>[IE 11] 65,6\%
+					\item<1->[IE 10] 14\%
+					\item<1->[IE 9] 14\%
+					\item<1->[IE 8] 7,8\%
 				\end{description}
 				\end{description}
 				\column{0.5\textwidth}
 				\begin{description}
-				\item<2->[Edge] 0,8\%
-				\item<3->[Android Browser] 3,24\%
-				\item<3->[MobileSafari] 1,21\%
+				\item<2-|alert@3>[Edge] 0,8\%
+				\item<3-|alert@3>[Android Browser] 3,24\%
+				\item<3-|alert@3>[MobileSafari] 1,21\%
 			\end{description}
 			\end{columns}
 	\end{frame}
-	\begin{frame}[<+->][t]{Browserfunktionen}
-			\begin{itemize}	
-				\item Korrektheit der Daten (FR011)
-				\item Algorithmus hochgeladen ? (NFR020)
-				\item Verstoßen gegen bestehendes Recht (NFR031)
-			\end{itemize}
-			
+	\begin{frame}[t]{HTML5}
+			\begin{figure}
+\centering
+\includegraphics[width=0.93\linewidth]{Bilder/HTML5Desktop}
+\caption{html5test.com Desktop}
+\label{fig:HTML5Desktop}
+\end{figure}
 	\end{frame}
-	\begin{frame}[<+->][t]{Browser Plattformen}
-			\begin{itemize}	
-				\item In RDF Datenbank speichern (NFR027)
-				\item Verfügbarkeit über REST-Protokoll (FR001, FR009)
-				\item Dateiverwaltung (FR015)
-				\item Download (FR027, 028)
-			\end{itemize}
+	\begin{frame}[t]{HTML5}
+		\begin{figure}
+			\centering
+			\includegraphics[width=1\linewidth]{Bilder/HTML5Mobile}
+			\caption{html5test.com Smart Devices}
+			\label{fig:HTML5Mobile}
+		\end{figure}
+
 	\end{frame}
 	
-	\section[UR 2]{User Requirement Beispiel 2}
+	\section[UR003]{Beispiel 2: User Requirement 003}
 	\subsection[Statement]{Statement}
 	\begin{frame}{Statement}{Datenupload}
-			"Nutzer sollen die benötigten Datensätze, Modelle, sowie Algorithmen von einem lokalen PC auf den Server hochladen können."
+		\begin{block}{UR003}
+			"`Nutzer sollen die benötigten Datensätze, Modelle, sowie Algorithmen von einem lokalen PC auf den Server hochladen können."'
+		\end{block}
+			
 	\end{frame}
 	
 	\subsection[Resultierende Fragen]{Resultierende Fragen}
