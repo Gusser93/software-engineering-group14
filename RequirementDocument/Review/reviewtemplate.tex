@@ -1,18 +1,153 @@
 \documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 \title{Review Document -- Requirements Document}
-\author{Firstname1 Lastname1 \and Firstname2 Lastname2 \and Firstname3
-Lastname3 \and Firstname4 Lastname4}
+\author{David Klopp \and Christian Stricker \and Markus Vieth}
 \date{\today}
-
-
+%Requirement, Problem, Solution
+\newcommand{\RPS}[5]{\subsection{#1 (#2)} \subsubsection*{Statement:} ''#3'' \subsubsection*{Problem:} #4 \subsection*{Lösung:} #5} 
 \begin{document}
 \maketitle
 
 \section{Introduction}
- 
-\section{\ldots}
- 
+
+\section{User-Requirements}
+
+\RPS{Mit Algorithmen "arbeiten"}{UR002}{%
+Das System soll mit den Klassifikationsalgorithmen J48, Random Forest und SMO arbeiten können.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+\RPS{Daten}{UR004}{%
+Das System soll alle Daten in einer Datenbank verwalten..%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Ordnerstruktur}{UR005}{%
+Die Datenbank soll eine Ordnerstruktur verwalten.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Superadmin}{UR006}{%
+Das System soll durch einen Superadmin verwaltet und gewartet werden.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Trainingsdaten}{UR015}{%
+Der Benutzer soll auf bestehende Modelle Trainingsdaten anwenden können, sofern er die Berechtigung dazu hat.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+
+\newpage
+
+
+\section*{System Requirements}
+
+\section{Non-Functional Requirements}
+
+\RPS{Nutzerdaten sollen "sicher" sein}{NFR010}{%
+Alle Nutzerdaten sollen sicher sein und werden nicht außerhalb des Systems verwendet.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Speicherort der Passwörter}{NFR013}{%
+Passwörter der Benutzer sollen mit SHA-256 und einem Salt sicher verschlüsselt sein.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\section{Functional Requirements}
+
+\RPS{Protokoll}{FR002}{%
+Das System soll die übergebenen Datensätze auf dem Server verarbeiten.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Warteschlange}{FR007}{%
+Es sollen standardmäßig zwei Modelle gleichzeitig berechnet werden können. Alle weiteren Berechnungen sind in einer Warteschlange. Der Superadmin soll einstellen können, wie viele gleichzeitig berechnet werden können.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Ordner}{FR016}{%
+Ein Ordner soll Paket heißen und Trainingsdatensatz, Testdaten- satz, Modell und Ergebnisdatensätze enthalten. Pakete können geschachtelt werden.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{"verschiedene Server"}{FR017}{%
+Das System soll auf verschiedene Server zugreifen können.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Sicherheitslücke}{FR020}{%
+Algorithmen sollen von angemeldeten Benutzern der System-Bibliothek hinzugefügt werden können.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+\RPS{Sicherheitslücke}{FR021}{%
+Modelle sollen als serialisiertes Java Objekt portierbar sein.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
+\RPS{Erweitertes GUI und erweiterte Funktionen}{FR019}{%
+Der Superadmin soll eine erweiterte GUI erhalten, in der seine erweiterten Funktionen ausführbar sind.%
+}{%
+Problem%
+}{%
+Lösung%
+}
+
+
 \end{document}
 
 %%% Local Variables:
