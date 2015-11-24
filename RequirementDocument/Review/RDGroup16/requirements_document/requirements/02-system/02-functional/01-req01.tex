@@ -1,0 +1,215 @@
+\paragraph{FR001}
+\begin{description}
+  \item [Statement]
+    \textit{Trainings- und Testdaten sollen nur in „\gls{csv}“ und „\gls{arff}“ Format hochgeladen werden können.
+    (Siehe UR008)}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR002}
+\begin{description}
+  \item [Statement] 
+    \textit{Das System soll die übergebenen Datensätze auf dem Server verarbeiten.
+    (Siehe UR001)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR003}
+\begin{description}
+  \item [Statement] 
+    \textit{Anonyme Benutzer sollen über eine Laufzeitbeschränkung reguliert sein, welche der \gls{Superadmin} einstellen kann.
+    (Siehe UR012)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR004}
+\begin{description}
+  \item [Statement] 
+    \textit{Anonyme Benutzer sollen ein Upload-Limit haben, über welches der \gls{Superadmin} verfügen kann.
+    (Siehe UR012)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR005}
+\begin{description}
+  \item [Statement] 
+    \textit{Die Ausgabe soll entsprechend des verwendeten Algorithmus dargestellt werden.
+    (Siehe UR007)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR006}
+\begin{description}
+  \item [Statement]
+    \textit{Bei Registrierung sollen E-Mail-Adresse, Passwort und optional ein Name angegeben werden.
+    (Siehe UR010)}
+  \item [Prioriy] \textit{A}
+\end{description}
+
+\paragraph{FR007}
+\begin{description}
+  \item [Statement] 
+    \textit{Es sollen standardmäßig zwei Modelle gleichzeitig berechnet werden können.
+Alle weiteren Berechnungen sind in einer Warteschlange.
+Der \gls{Superadmin} soll einstellen können, wie viele gleichzeitig berechnet werden können.
+	(Siehe UR008)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR008}
+\begin{description}
+  \item [Statement] 
+    \textit{Anhand der Parameter der Trainingsdaten sollen dem Benutzer passende Algorithmen zur Auswahl gestellt werden.
+	(Siehe UR002)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR009}
+\begin{description}
+  \item [Statement] 
+    \textit{Anhand der Parameter der Testdaten soll geprüft werden, ob sie auf das gewählte Modell anwendbar sind.
+	(Siehe UR008)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR010}
+\begin{description}
+  \item [Statement] 
+    \textit{Beim Hochladen eines Datensatzes soll der Benutzer zwei Möglichkeiten haben:
+    \begin{itemize}
+    \item[•] Der komplette Datensatz soll aus Trainingsdaten bestehen. Die Testdaten sollen in diesem Fall im Nachhinein hochgeladen werden.
+    \item[•] Der Datensatz wird nach Wahl des Benutzers in Trainings- und Testdaten unterteilt. Im Nachhinein können weitere Testdaten hochgeladen werden.
+    \end{itemize}
+(Siehe UR008)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR011}
+\begin{description}
+  \item [Statement] 
+    \textit{Hochgeladene Algorithmen sollen als .jar gepackt sein und von der (\gls{Java}-)\gls{WEKA}-Klasse Classifier erben.
+	(Siehe UR007)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR012}
+\begin{description}
+  \item [Statement] 
+    \textit{Wenn der Speicher des Servers voll ist, wird eine Fehlermeldung geworfen.
+	(Siehe UR001)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR013}
+\begin{description}
+  \item [Statement] 
+    \textit{Zu jedem \gls{Paket} sollen Zugriffsrechte vergeben und gespeichert werden.
+	(Siehe UR003)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR014}
+\begin{description}
+  \item [Statement] 
+    \textit{Werden Trainingsdaten für einen Algorithmus eingegeben, für die bereits ein Modell mit genau diesen Trainingsdaten existiert, soll der Nutzer entscheiden können, ob das vorhandene Modell genutzt oder ein neues Modell angelegt wird.
+	(Siehe UR026)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR015}
+\begin{description}
+  \item [Statement] 
+    \textit{Alles in einem \gls{Paket} sowie das \gls{Paket} selbst soll eine ID besitzen.
+	(Siehe UR005)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR016}
+\begin{description}
+  \item [Statement] 
+    \textit{Ein Ordner soll \gls{Paket} heißen und Trainingsdatensatz, Testdatensatz, Modell und Ergebnisdatensätze enthalten. \gls{Paket}e können geschachtelt werden.
+	(Siehe UR005)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR017}
+\begin{description}
+  \item [Statement] 
+    \textit{Das System soll auf verschiedene Server zugreifen können.
+	(Siehe UR003)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR018}
+\begin{description}
+  \item [Statement] 
+    \textit{Der \gls{Superadmin} soll über alle Inhalte des Systems verfügen und die Eigenschaften konfigurieren können.
+	(Siehe UR006)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR019}
+\begin{description}
+  \item [Statement] 
+    \textit{Der \gls{Superadmin} soll eine erweiterte \gls{GUI} erhalten, in der seine erweiterten Funktionen ausführbar sind.
+	(Siehe UR006)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR020}
+\begin{description}
+  \item [Statement] 
+    \textit{Algorithmen sollen von angemeldeten Benutzern der System-Bibliothek hinzugefügt werden können.
+	(Siehe UR007)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR021}
+\begin{description}
+  \item [Statement] 
+    \textit{Modelle sollen als serialisiertes \gls{Java} Objekt portierbar sein.
+	(Siehe UR009)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR022}
+\begin{description}
+  \item [Statement] 
+    \textit{Standartmäßig sollen Modelle von nicht angemeldeten Nutzern nach 30 Tagen gelöscht werden. Der \gls{Superadmin} kann über diesen Zeitraum nachträglich bestimmen. Modelle von angemeldeten Benutzern bleiben auf unbestimmte Zeit erhalten.
+	(Siehe UR012)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR023}
+\begin{description}
+  \item [Statement] 
+    \textit{Anonyme Benutzer dürfen weder Lese- noch Schreibrechte festlegen.
+	(Siehe UR012)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR024}
+\begin{description}
+  \item [Statement] 
+    \textit{Extern hochgeladene Modelle sollen vom \gls{Superadmin} erst freigegeben werden müssen.
+	(Siehe UR009)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR025}
+\begin{description}
+  \item [Statement] 
+    \textit{Modelle von anonymen Nutzern sollen für alle nutzbar sein.
+	(Siehe UR012)}
+  \item [Priority] \textit{A}
+\end{description}
+
+\paragraph{FR026}
+\begin{description}
+  \item [Statement] 
+    \textit{Ein angemeldeter Benutzer soll die Lese- und Schreibrechte für alle Benutzer, bestimmte Benutzergruppen oder einzelne Benutzer festlegen können.
+	(Siehe UR014)}
+  \item [Priority] \textit{A}
+\end{description}
+
+

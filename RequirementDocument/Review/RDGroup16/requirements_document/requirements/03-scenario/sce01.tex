@@ -1,0 +1,42 @@
+\section{Registered user creates a new model}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der Benutzer hat in seinem Webbrowser den Webservice geöffnet. Er ist mit seinem Benutzerkonto angemeldet.}
+  \item [NORMAL:]
+    \textit{Der Nutzer erstellt zunächst ein Paket oder wählt ein bereits vorhandenes Paket, auf das er Zugriff hat, aus. Falls er Adminrechte auf das Paket hat, kann er die Lese- und Schreibrechte festlegen. Nun lädt er einen Datensatz im csv oder arff Format in das Paket hoch. Diesen kann der Nutzer nach Belieben in Trainings- und Testdaten unterteilen.  Es wird ihm eine Vorauswahl an Algorithmen angeboten, die mit dem Datensatz kompatibel sind. Nach der Auswahl des Algorithmus errechnet der Server das Modell. Das fertig errechnete Modell wird im selben Paket gespeichert. Falls bereits Testdaten in dem anfangs hochgeladenen Datensatz enthalten waren, wird das Ergebnis der Vorhersage ebenfalls im Paket gespeichert.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{
+    \begin{itemize}
+\item Der Nutzer verliert die Internetverbindung.
+\item Das Modell besteht schon. Der Nutzer hat die Wahl, das vorhandene Modell zu benutzen oder ein neues Modell zu berechnen.
+\item Der Server ist bereits ausgelastet. In diesem Fall wird die Berechnung des Modells hinten angestellt.
+\item Der Speicher des Servers ist voll. Es wird eine Fehlermeldung angezeigt.
+\end{itemize}
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Das Modell ist berechnet, es können weitere Testdaten darauf angewendet werden.}
+\end{description}
+
+\section{Registered user uses a model}
+\begin{description}
+  \item [INITIAL ASSUMPTION:]
+    \textit{Der Benutzer hat in seinem Webbrowser den Webservice geöffnet. Er ist mit seinem Benutzerkonto angemeldet und befindet sich in dem entsprechenden Paket.}
+  \item [NORMAL:]
+    \textit{Der Nutzer kann Testdaten im csv oder arff Format in das Paket hochladen.
+Es können nun die auszuwertenden Parameter, die in der Ausgabe erscheinen sollen, ausgewählt werden. Die vom Server errechneten Vorhersagen für das Modell, basierend auf den Trainingsdaten, werden dann im Paket gespeichert.}
+  \item [WHAT CAN GO WRONG:]
+    \textit{
+    \begin{itemize}
+\item Die Parameter des Datensatzes sind nicht kompatibel zu dem Modell. Es gibt eine Fehlermeldung.
+\item Der Speicher des Servers ist voll. Es wird eine Fehlermeldung angezeigt.
+\item Der Nutzer verliert die Internetverbindung.
+\end{itemize}
+}
+  \item [OTHER ACTIVITIES:]
+    \textit{}
+  \item [SYSTEM STATE ON COMPLETION:]
+    \textit{Die Vorhersagen sind bereit, angezeigt oder heruntergeladen zu werden.}
+\end{description}
+
