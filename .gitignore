@@ -150,3 +150,6 @@ pythontex-files-*/
 #######
 ##Linux Zeug
 *.swp
+###
+#Mac Zeug
+*.DS*
