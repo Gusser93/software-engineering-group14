@@ -146,3 +146,7 @@ pythontex-files-*/
 *.glsdefs
 *.sh
 /inputs.tex
+
+#######
+##Linux Zeug
+*.swp
