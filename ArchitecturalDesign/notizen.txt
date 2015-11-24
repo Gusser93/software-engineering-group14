@@ -1,0 +1,6 @@
+CMV für anzeige der Ergebnisse der Modelle
+Pipelines für up- und download, z.B. zum Packen und entpacken
+repository für die Datenbank
+Layer für kommunikation mit Nutzer?
+Microkernel für WEKA?
+
