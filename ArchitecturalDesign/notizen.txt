@@ -3,4 +3,4 @@ Pipelines für up- und download, z.B. zum Packen und entpacken
 repository für die Datenbank
 Layer für kommunikation mit Nutzer?
 Microkernel für WEKA?
-Reflection für die Webseite, da diese möglicherweise dynamisch, z.B. durch parsen und JavaScript????
+Reflection für die Webseite, da diese möglicherweise dynamisch, z.B. durch parsen und JavaScript???? Oder etwas mit den Algorithmen, welche die Basis bilden und die Modelle die Meta objekte????????
