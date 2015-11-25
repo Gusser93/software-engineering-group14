@@ -91,62 +91,62 @@ Lösung%
 \RPS{Protokoll}{FR002}{%
 Das System soll die übergebenen Datensätze auf dem Server verarbeiten.%
 }{%
-Problem%
+Das Functional Requirement ist ungenau und nicht messbar. Es wird weder genannt, in wie fern Datensätze verarbeitet werden, noch was mit ihnen passieren soll.%
 }{%
-Lösung%
+Als User Requirement notieren oder streichen%
 }
 
 
 \RPS{Warteschlange}{FR007}{%
 Es sollen standardmäßig zwei Modelle gleichzeitig berechnet werden können. Alle weiteren Berechnungen sind in einer Warteschlange. Der Superadmin soll einstellen können, wie viele gleichzeitig berechnet werden können.%
 }{%
-Problem%
+Die Art der Warteschlange ist nicht definiert.%
 }{%
-Lösung%
+Die Warteschlange könnte als first in, first out festgelegt werden.%
 }
 
 
 \RPS{Ordner}{FR016}{%
-Ein Ordner soll Paket heißen und Trainingsdatensatz, Testdaten- satz, Modell und Ergebnisdatensätze enthalten. Pakete können geschachtelt werden.%
+Ein Ordner soll Paket heißen und Trainingsdatensatz, Testdatensatz, Modell und Ergebnisdatensätze enthalten. Pakete können geschachtelt werden.%
 }{%
-Problem%
+Der Begriff Ordner an dieser Stelle ist falsch/ungenau. %
 }{%
-Lösung%
+Das Wort Ordner streichen.%
 }
 
 
 \RPS{"verschiedene Server"}{FR017}{%
 Das System soll auf verschiedene Server zugreifen können.%
 }{%
-Problem%
+Die Formulierung ist mehrdeutig. Ein System soll auf einem Server laufen. Der Zugriff auf andere Datenbanken erfolgt über das REST-Interface.%
 }{%
-Lösung%
+Genauer ausformulieren.%
 }
 
 
 \RPS{Sicherheitslücke}{FR020}{%
 Algorithmen sollen von angemeldeten Benutzern der System-Bibliothek hinzugefügt werden können.%
 }{%
-Problem%
+Große Sicherheitslücke, da so Schadcode in das System gespielt werden kann.%
 }{%
-Lösung%
+Der Administrator überprüft die Algorithmen vor der Integration in das System auf ihre Funktionalität und eventuelle Schadsoftware.%
 }
 
 \RPS{Sicherheitslücke}{FR021}{%
 Modelle sollen als serialisiertes Java Objekt portierbar sein.%
 }{%
-Problem%
+Große Sicherheitslücke, da so Schadcode in das System gespielt werden kann.%
 }{%
-Lösung%
+Modelle sind in einem anderem Format zu importieren oder durch einen Administrator zu prüfen.%
 }
 
 
 \RPS{Erweitertes GUI und erweiterte Funktionen}{FR019}{%
 Der Superadmin soll eine erweiterte GUI erhalten, in der seine erweiterten Funktionen ausführbar sind.%
 }{%
-Problem%
+"`Erweitertes GUI"' und "`erweiterte Funktionen"' sind nicht weiter definiert.%
 }{%
-Lösung%
+Als User Requirement aufnehmen oder genauer definieren.%
 }
 
 
