@@ -19,44 +19,44 @@
 \RPS{Mit Algorithmen "arbeiten"}{UR002}{%
 Das System soll mit den Klassifikationsalgorithmen J48, Random Forest und SMO arbeiten können.%
 }{%
-Problem%
+Die Formulierung "mit Klassifikationsalgorithmen [\ldots] arbeiten" ist missverständlich, da der Eindruck entsteht, als solle das Programm in der Lage sein Algorithmen zu editieren.%
 }{%
-Lösung%
+Verwende anstelle des Begriffs "arbeiten" die Formulierung "zur Verfügung stellen", um deutlich zu machen, dass diese Algorithmen bereits im System integriert sind, um Modelle zu generieren.%
 }
 
 \RPS{Daten}{UR004}{%
 Das System soll alle Daten in einer Datenbank verwalten..%
 }{%
-Problem%
+Die Datenbank soll z.B. Pakete, Modelle und Parameter enthalten. Das Wort "alle" legt dieVermutung nahe, dass auch Algorithmen und Nutzerdaten in dieser Datenbank gespeichert werden sollen. 
 }{%
-Lösung%
+Zähle explizit jene Daten auf die in der Datenbank gespeichert werden sollen.%
 }
 
 
 \RPS{Ordnerstruktur}{UR005}{%
 Die Datenbank soll eine Ordnerstruktur verwalten.%
 }{%
-Problem%
+Der Begriff Ordnerstruktur legt nahe, dass die Datenbank einen Ordner abspeichern soll. Dies ist allerdings nicht möglich.%
 }{%
-Lösung%
+Da mit dem Begriff "Ordnerstruktur" im obigen Statement der Aufbau eines durch den Nutzer erstellten Paketes gemeint ist, sollte man an dieser Stelle eher Pakten sprechen.%
 }
 
 
 \RPS{Superadmin}{UR006}{%
 Das System soll durch einen Superadmin verwaltet und gewartet werden.%
 }{%
-Problem%
+Laut Definition des Superadmin unterscheidet sich dieser in keiner Weise von einem normalen Systemadministrator.%
 }{%
-Lösung%
+Oftmals wird von Admin gesprochen wenn eigentlich ein Nutzer gemeint ist. Wenn man diesen Fehler beseitigt, erübrigt sich die Notwendigkeit des Begriffes "Superadmin", da sich dieser nun durch "Admin" ersetzten lässt. %
 }
 
 
 \RPS{Trainingsdaten}{UR015}{%
 Der Benutzer soll auf bestehende Modelle Trainingsdaten anwenden können, sofern er die Berechtigung dazu hat.%
 }{%
-Problem%
+Trainingsdaten können nicht auf ein bestehendes Modell angewendet werden, sondern lediglich zur Generierung eines solchen verwendet werden.%
 }{%
-Lösung%
+Gemeint ist das Anwenden von Daten auf ein Modell zur Verifizierung der Funktionsfähigkeit des Selbigen. Man sollte im obigen Statement daher von Verifizierungs- oder Überprüfungsdaten anstelle von Trainingsdaten sprechen.%
 }
 
 
@@ -71,18 +71,18 @@ Lösung%
 \RPS{Nutzerdaten sollen "sicher" sein}{NFR010}{%
 Alle Nutzerdaten sollen sicher sein und werden nicht außerhalb des Systems verwendet.%
 }{%
-Problem%
+Der Begriff "sicher" ist nicht präzise, da z.B sowohl gemeint sein könnte, dass die Daten frei von Schadcode sein sollen oder aber das kein Datenverlust auftreten soll.%
 }{%
-Lösung%
+"Die Nutzerdaten sollen verschlüsselt auf dem Server abgespeichert werden." trifft die gemeinte Aussage des Statements besser.%
 }
 
 
 \RPS{Speicherort der Passwörter}{NFR013}{%
 Passwörter der Benutzer sollen mit SHA-256 und einem Salt sicher verschlüsselt sein.%
 }{%
-Problem%
+Es ist nicht definiert wo und in welcher Form die angegebenen Daten abgespeichert werden sollen.%
 }{%
-Lösung%
+Ergänze das Statement so, dass klar hervorgeht das die Daten in der Datenbank auf dem Server mit oben angegebener Verschlüsslung abgespeichert werden sollen.%
 }
 
 
