@@ -21,7 +21,7 @@ ersetzt das alte:
 - Pipe and Filter			(!)	Christian
 - Blackboard					David
 - Broker				(!)	Christian
-- Model-View-Controller			!	David
+- Model-View-Controller		!	David
 - Presentation-Abstraction-Control	(!)	David
 - Mikrokernel				!	Markus
 - Reflection				(!)	Markus
