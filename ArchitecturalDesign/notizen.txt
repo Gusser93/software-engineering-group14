@@ -1,6 +1,6 @@
-CMV für anzeige der Ergebnisse der Modelle
-Pipelines für up- und download, z.B. zum Packen und entpacken (nicht nötig)
+MVC für Anzeige der Ergebnisse der Modelle
+Pipelines für up- und download, z.B. zum Packen und Entpacken (nicht nötig)
 repository für die Datenbank (VORSICHT, vielleicht nicht nötig)
-Layer für kommunikation mit Nutzer? (nicht nötig)
+Layer für Kommunikation mit Nutzer? (nicht nötig)
 Microkernel für WEKA
 Reflection (nicht nötig)
