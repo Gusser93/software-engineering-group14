@@ -15,15 +15,15 @@ ersetzt das alte:
 - Wenn es zu Problemen kommt, ersteinmal den ganzen Müll der bei der Erstellung des PDFs entsteht löschen, das hilft oft.
 
 ##Pattern
-Legende: !  &#x2259; soll genutzt werden;(!) &#x2259; soll vielleicht genutzt werden; 	&#x2259; soll nicht genutzt werden
-- Layer						        &ensp;Markus
-- Repository                        &ensp;(!)	Markus/David
-- Client-Server				        &ensp;!	Christian
-- Pipe and Filter			        &ensp;(!)	Christian
-- Blackboard					    &ensp;David
-- Broker				            &ensp;(!)	Christian
-- Model-View-Controller		        &ensp;!	David
+Legende: !  &#x2259; soll genutzt werden;(!) &#x2259; soll vielleicht genutzt werden;&ensp;&ensp;&#x2259; soll nicht genutzt werden
+- Layer &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Markus
+- Repository &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)Markus/David
+- Client-Server &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Christian
+- Pipe and Filter &ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
+- Blackboard &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;David
+- Broker &ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
+- Model-View-Controller &ensp;&ensp;&ensp;!	David
 - Presentation-Abstraction-Control	&ensp;(!)	David
-- Mikrokernel				        &ensp;!	Markus
-- Reflection				        &ensp;(!)	Markus
+- Mikrokernel &ensp;&ensp;&ensp;&ensp;&ensp;!	Markus
+- Reflection &ensp;&ensp;&ensp;&ensp;&ensp;(!)	Markus
 
