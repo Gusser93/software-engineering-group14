@@ -15,15 +15,15 @@ ersetzt das alte:
 - Wenn es zu Problemen kommt, ersteinmal den ganzen Müll der bei der Erstellung des PDFs entsteht löschen, das hilft oft.
 
 ##Pattern
-Legende: !  &#x2258; soll genutzt werden;<tab id=t1> (!) &#x2258; soll vielleicht genutzt werden; 	&#x2258; soll nicht genutzt werden
-- Layer						        <tab to=t1>Markus
-- Repository                        <tab to=t1>(!)	Markus/David
-- Client-Server				        <tab to=t1>!	Christian
-- Pipe and Filter			        <tab to=t1>(!)	Christian
-- Blackboard					    <tab to=t1>David
-- Broker				            <tab to=t1>(!)	Christian
-- Model-View-Controller		        <tab to=t1>!	David
-- Presentation-Abstraction-Control	<tab to=t1>(!)	David
-- Mikrokernel				        <tab to=t1>!	Markus
-- Reflection				        <tab to=t1>(!)	Markus
+Legende: !  &#x2259; soll genutzt werden;(!) &#x2259; soll vielleicht genutzt werden; 	&#x2259; soll nicht genutzt werden
+- Layer						        &ensp;Markus
+- Repository                        &ensp;(!)	Markus/David
+- Client-Server				        &ensp;!	Christian
+- Pipe and Filter			        &ensp;(!)	Christian
+- Blackboard					    &ensp;David
+- Broker				            &ensp;(!)	Christian
+- Model-View-Controller		        &ensp;!	David
+- Presentation-Abstraction-Control	&ensp;(!)	David
+- Mikrokernel				        &ensp;!	Markus
+- Reflection				        &ensp;(!)	Markus
 
