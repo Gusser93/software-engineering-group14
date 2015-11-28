@@ -16,14 +16,14 @@ ersetzt das alte:
 
 ##Pattern
 Legende: !  &#x2259; soll genutzt werden;(!) &#x2259; soll vielleicht genutzt werden;&ensp;&ensp;&#x2259; soll nicht genutzt werden
-- Layer &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Markus
-- Repository &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)Markus/David
-- Client-Server &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Christian
-- Pipe and Filter &ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
-- Blackboard &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;David
-- Broker &ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
-- Model-View-Controller &ensp;&ensp;&ensp;!	David
-- Presentation-Abstraction-Control	&ensp;(!)	David
-- Mikrokernel &ensp;&ensp;&ensp;&ensp;&ensp;!	Markus
-- Reflection &ensp;&ensp;&ensp;&ensp;&ensp;(!)	Markus
+- Layer &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Markus
+- Repository &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)Markus/David
+- Client-Server &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Christian
+- Pipe and Filter &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
+- Blackboard &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;David
+- Broker &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
+- Model-View-Controller &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	David
+- Presentation-Abstraction-Control	&ensp;&ensp;&ensp;&ensp;(!)	David
+- Mikrokernel &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Markus
+- Reflection &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Markus
 
