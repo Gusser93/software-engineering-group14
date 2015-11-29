@@ -1,4 +1,4 @@
-MVC für anzeige der Ergebnisse der Modelle
+MVC für Anzeige der Ergebnisse der Modelle
 Pipelines für up- und download, z.B. zum Packen und Entpacken (nicht nötig)
 repository für die Datenbank (VORSICHT, vielleicht nicht nötig)
 Layer für Kommunikation mit Nutzer? (nicht nötig)
