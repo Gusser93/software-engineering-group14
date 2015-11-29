@@ -26,4 +26,7 @@ Legende: !  &#x2259; soll genutzt werden;(!) &#x2259; soll vielleicht genutzt we
 - Presentation-Abstraction-Control	&ensp;&ensp;&ensp;&ensp;(!)	David
 - Mikrokernel &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Markus
 - Reflection &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Markus
+ 
+Beispieldokument
+http://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm
 
