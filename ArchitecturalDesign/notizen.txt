@@ -1,1 +1,0 @@
-theoretisch ist im Microkernel auch der Client mit drinn.
