@@ -1,5 +1,12 @@
 \documentclass{book}
 
+\usepackage{xcolor}
+\usepackage{sectsty}
+\definecolor{ChapterBlue}{rgb}{0.1,0.6, 0.9}
+\chapterfont{\color{ChapterBlue}}  % sets colour of chapters
+\sectionfont{\color{cyan}}
+
+
 \usepackage[german]{babel}
 \pagestyle{plain}
 \title{Design Document}
@@ -16,7 +23,7 @@
 \part{Architectural Design}
 
 \chapter{Einleitung}
- \input{input/introduction}
+\input{input/introduction}
  
 \chapter{Externe Schicht}
 \input{input/externalLayer}
@@ -26,10 +33,6 @@
 
 \chapter{Strukturschicht}
 \input{input/structuralLayer}
-
-\chapter{Verhaltensschicht}
-\input{input/behavioralLayer}
-
  
 \end{document}
 
