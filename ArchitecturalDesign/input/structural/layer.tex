@@ -1,0 +1,11 @@
+Um den Zugriff auf die Datenbank zu beschränken, wird zwischen die Datenschnittstelle und die Datenbank eine Benutzerverwaltung geschaltet. Diese überprüft nun bei jeder Anforderung auf einen Zugriff auf die Datenbank, ob dieser vom aktuellen Nutzer erlaubt ist oder nicht.
+\begin{wrapfigure}{l}{0.3\textwidth}
+	\vspace{-15pt}
+\begin{center}
+\includegraphics[width=1\linewidth]{Grafik/Diagramm/Layer}
+\end{center}
+\vspace{-15pt}
+\caption[Layer-Klassen]{Layer-Pattern mit Benutzerverwaltung}
+\label{fig:Layer}
+\end{wrapfigure}\\
+Das Layer-Pattern hilft einen unerlaubten Zugriff auf die Datenbank zu verhindern und stellt sicher, dass jeder zugriff erst über die Benutzerverwaltung erlaubt wird. Ein weiterer Vorteil stellt die Flexibilität der einzelnen Schichten dar, so kann die Datenschnittstelle statt der lokalen Datenbank auch die Datenbank eines anderen Servers über REST abgerufen, da die Kommunikationswege innerhalb des Layer-Pattern identisch sind.
