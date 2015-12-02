@@ -9,7 +9,7 @@ Im folgenden wird zunächst genauer auf das Erzeugen der UI, in unserem Fall ein
 \includegraphics[width=0.8\linewidth]{Grafik/Diagramm/Pattern/MVC/Website/Kontextdiagramm.png}
 \caption[MVC Website Klassen]{MVC-Pattern zum Website anzeigen}
 \end{figure}
-\noindent  Das UI ist der für den Benutzer sichtbare Teil des Systems. Betätigt der Nutzer in diesem eine Schaltflä1.0che, so werden seine Eingaben durch den Webserver ausgewertet und an die entsprechenden Instanzen im System weitergeleitet. Sollen in etwa benutzerbezogene Daten abgefragt werden, so greift der Webserver auf die Datenschnittstelle zu, die die entsprechenden Daten über eine SPARQL Anfragen an die RDF-Datenbank bereitstellt. Auf Basis dieser Rückgabe generiert der Webserver nun das entsprechende UI und  zeigt dieses dem Nutzer an.
+\noindent  Das UI ist der für den Benutzer sichtbare Teil des Systems. Betätigt der Nutzer in diesem eine Schaltfläche, so werden seine Eingaben durch den Webserver ausgewertet und an die entsprechenden Instanzen im System weitergeleitet. Sollen in etwa benutzerbezogene Daten abgefragt werden, so greift der Webserver auf die Datenschnittstelle zu, die die entsprechenden Daten über eine SPARQL Anfragen an die RDF-Datenbank bereitstellt. Auf Basis dieser Rückgabe generiert der Webserver nun das entsprechende UI und  zeigt dieses dem Nutzer an.
 Sollten sich die Daten in der Datenbank ändern, so registriert die Datenschnittstelle dies und informiert das UI hierüber, damit die Anzeige entsprechend verändert wird.
 \begin{figure}[h]
 \centering
