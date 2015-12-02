@@ -154,3 +154,5 @@ pythontex-files-*/
 ###
 #Mac Zeug
 *.DS*
+##
+*.db
