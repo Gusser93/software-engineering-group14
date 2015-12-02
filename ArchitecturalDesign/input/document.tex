@@ -33,11 +33,8 @@ Nachteile sind:\\
 -Die Leistung des Systems ist unberechenbar, wenn die verschiedenen Service im Server-Netzwerk verteilt ist. Dieser Fall existiert in unserem System nicht.\\
 -Es gibt Management Probleme, wenn Server in relativ Unabhängigen Besitz ist. Da die Server unabhängig arbeiten und nur zusammenarbeiten, wenn schon vorhandene Modelle/Datensätze auf einem anderen Server angefragt werden, ist dieser Nachteil zu vernachlässigen.
 
-\subsection*{Was spricht gegen Pipe-and-Filter-Modell?}
-Dieses Modell ist zu mächtig, da die Ströme zwischen Server und Client nicht gekapselt oder verschlüsselt werden sollen. Server und Client müssten immer beim Aufbauen einer Verbindung eine Verschlüsselung vereinbaren und die Datenströme verschlüsseln und entschlüsseln. Dies vermindert oder verhindert sogar spätere Veränderungen vorzunehmen nd verbraucht unnötige Rechenzeit, da keine hoch sensiblen Daten ausgetauscht werden.
 
-\subsection*{Was spricht gegen Broker-Modell?}
-Das Broker-Modell vermindert die Performance, da alle Komponente des Systems nur indirekt angesprochen werden. Des Weiteren hängt die Kommunikation der einzelnen Systeme von vielen Komponenten ab und ist deshalb Fehleranfällig.
-Sinnvoll wäre der Broker nur, wenn viele verschiedene Clients auf viele verschiedenen Server auf viele verschiedene Service zugreifen wollen. Die Anzahl der Services unseres Servers ist sehr überschaubar und deshalb ist der Broker zu ineffizient für unseren Server.
+
+
 
 %\end{document}
