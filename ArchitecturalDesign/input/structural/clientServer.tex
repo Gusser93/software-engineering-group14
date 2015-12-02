@@ -1,14 +1,11 @@
 %\documentclass[a4paper,11pt,twoside]{article}
 %\usepackage{graphicx}
 %\begin{document}
-	
-	
-	
-\section{Client-Server-Modell}
+
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{Grafik/Diagramm/Pattern/ClientServer/Kontext.png}
+	\includegraphics[width=0.5\linewidth]{Grafik/Diagramm/Pattern/ClientServer/Kontext.png}
 	\caption[]{Client-Server-Modell}
 \end{figure}
 
@@ -16,14 +13,13 @@
 Der Client ist der User, der Datensätze, Algorithmen auf den Server hochladen, diese dann dort berechnen lassen und Pakete downloaden kann.
 
 \subsection*{Server}
-Der Server bietet dem User den Dienst an, Modelle anhand von schon vorhandenen oder vom User hoch geladenen Datensätzen und Algorithmen zu erstellen. Des Weiteren dient der Server als Datenbank von schon mit verschiedenen Datensätzen erstellten Modellen.
+Der Server bietet dem User den Dienst an, Modelle anhand von schon vorhandenen oder vom User hoch geladenen Datensätzen und Algorithmen zu erstellen. Des Weiteren dient der Server als Datenbank von schon mit verschiedenen Datensätzen erstellten Modellen.\\
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.3]{Grafik/Diagramm/Pattern/ClientServer/Sequenzdiagramm.png}
-		\caption[]{Client-Server-Sequenzdiagramm}
-\end{figure}
-
+	\includegraphics[width=0.6\linewidth]{Grafik/Diagramm/Pattern/ClientServer/Sequenzdiagramm.png}
+	\caption[]{Client-Server-Sequenzdiagramm}
+\end{figure}\pagebreak
 Der Client versucht eine Verbindung zum Server aufzubauen, der Server versucht ebenfalls bei Anfrage eine Verbindung zum Client Aufzubauen und schickt dem Client eine Bestätigung, das die Verbindung steht. Danach kann der Client Datensätze/Algorithmen hochladen und dem Server eine Anfrage zum Modelle downloaden schicken.
 
 \subsection*{Was spricht für das Client-Server-Modell?}
