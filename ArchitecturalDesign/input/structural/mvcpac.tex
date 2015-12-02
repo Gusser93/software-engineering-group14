@@ -1,6 +1,6 @@
 
 
-\subsection*{Website}
+\subsubsection{Website}
 \noindent Um zu verstehen wie die Interaktion zwischen Nutzer und System funktioniert, ist es notwendig die Kommunikation der einzelnen Komponenten, die zuständig für das Generieren des UI sind, näher zu beleuchten. 
 Besonders geeignet hierfür ist das Model-View-Controller (MVC) Pattern. 
 Im folgenden wird zunächst genauer auf das Erzeugen der UI, in unserem Fall eine Website und anschließend auf die Einbindung einzelner Darstellungskomponenten in dieses eingegangen. \\
@@ -17,14 +17,14 @@ Sollten sich die Daten in der Datenbank ändern, so registriert die Datenschnitt
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1.0\linewidth]{Grafik/Diagramm/Pattern/MVC/Website/Sequenzdiagramm.png}
+\includegraphics[width=0.6\linewidth]{Grafik/Diagramm/Pattern/MVC/Website/Sequenzdiagramm.png}
 \caption[MVC Website Sequenz]{MVC-Pattern Sequenz zum Generieren der Website}
 \end{figure}
 
 
 \clearpage
 
-\subsection*{Plugin}
+\subsubsection{Plugin}
 Um nun bestimmte Darstellungskomponenten, im weiteren als Plugins bezeichnet, in das UI einzubinden wird das MVC-Pattern erneut verwendet. Solche Plugins können z.B. die Ausgabe von Ergebnissen als Text oder Grafik sein, aber auch Eingabemasken zum Erstellen von Modellen.
 
 
@@ -46,14 +46,14 @@ Das fertige Plugin wird nun in das Haupt-UI integriert.
 
 \clearpage
 
-\subsection*{Was spricht für Model-View-Controller?}
+\subsubsection{Was spricht für Model-View-Controller?}
 Das MVC-Pattern ermöglicht es das System leicht zu erweitern. Durch die Anwendung des Pattern zur Erzeugung des UI, wird es leicht dieses auszutauschen. Zum Einbinden einer mobilen Website oder einer Desktopoberfläche genügt es lediglich das UI Objekt zu ändern. Letzteres würde allerdings einen Mehraufwand erfordern, da die grafische Implementierung auf Seiten des Client erfolgen müsste.
 Durch die Einbindung verschiedener Plugins in das System, wird gewährleistet, das auf neue Gegebenheiten schnell reagiert werden kann.
 Sollte z.B. ein Algorithmus eine spezifische Ausgabe benötigen, könnte speziell für diesen ein neues Plugin erstellt werden. 
 Des Weiteren erleichtert diese Aufteilung die Wartung des Systems enorm, da einzelne Plugins für sich getestet werden können, ohne in das Gesamtsystem eingebettet zu sein. 
 
 
-\subsection*{Was spricht gegen Presentation-Abstraction-Control?}
+\subsubsection{Was spricht gegen Presentation-Abstraction-Control?}
 Bei klar definierten Benutzer-System Interaktionen ist eine verschachtelte Struktur mittels Agenten, wie sie PAC vorsieht, zu umfangreich und nicht notwendig. 
 Die Stärke von PAC liegt darin verschiedene, bestehende Teilsystem miteinander zu verknüpfen. In unserem System ließe sich dies beispielsweise auf die Datenbank und die Implementierung von WEKA anwenden. Da allerdings nur diese beiden Komponenten Daten generieren können, ist es einfacher diese über eine übergeordnete Komponente anzusprechen, als die hohe Komplexität des Pattern in Kauf zu nehmen. 
 Der Fokus unsere Implementierung des Systems liegt auf der Erweiterbarkeit des UIs, die durch MVC leichter und effektiver gegeben ist.
