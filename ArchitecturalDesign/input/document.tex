@@ -1,5 +1,11 @@
 \section{Client-Server-Modell}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{../Grafik/Diagramm/Pattern/ClientServer/Kontext.png}
+	\caption[MVC Website Klassen]{MVC-Pattern zum Website anzeigen}
+\end{figure}
+
 \subsection*{Client}
 Der Client ist der User, der Datensätze, Algorithmen auf den Server hochladen, diese dann dort berechnen lassen und Pakete downloaden kann.
 
@@ -8,9 +14,11 @@ Der Server bietet dem User den Dienst an, Modelle anhand von schon vorhandenen o
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{../Grafik/Diagramm/Pattern/ClientServer/Kontext.png}
+	\includegraphics[scale=0.6]{../Grafik/Diagramm/Pattern/Sequenzdiagramm.png}
 	\caption[MVC Website Klassen]{MVC-Pattern zum Website anzeigen}
 \end{figure}
+
+Der Client versucht eine Verbindung zum Server aufzubauen, der Server versucht ebenfalls bei Anfrage eine Verbindung zum Client Aufzubauen und schickt dem Client eine Bestätigung, das die Verbindung steht. Danach kann der Client Datensätze/Algorithmen hochladen und dem Server eine Anfrage zum Modelle downloaden schicken.
 
 \subsection*{Was spricht für das Client-Server-Modell?}
 Das Client-Server-Modell wird verwendet, wenn eine Datenbank oder ein Service von verschiedenen Orten her abgerufen werden soll. Dies ist für beides der Fall. Der User kann global auf den Server zugreifen und Daten hoch und runter laden.\\
