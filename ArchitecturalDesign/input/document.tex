@@ -1,0 +1,26 @@
+\section{Client-Server-Modell}
+
+\subsection*{Client}
+Der Client ist der User, der Datensätze, Algorithmen auf den Server hochladen, diese dann dort berechnen lassen und Pakete downloaden kann.
+
+\subsection*{Server}
+Der Server bietet dem User den Dienst an, Modelle anhand von schon vorhandenen oder vom User hoch geladenen Datensätzen und Algorithmen zu erstellen. Des Weiteren dient der Server als Datenbank von schon mit verschiedenen Datensätzen erstellten Modellen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{../Grafik/Diagramm/Pattern/ClientServer/Kontext.png}
+	\caption[MVC Website Klassen]{MVC-Pattern zum Website anzeigen}
+\end{figure}
+
+\subsection*{Was spricht für das Client-Server-Modell?}
+Das Client-Server-Modell wird verwendet, wenn eine Datenbank oder ein Service von verschiedenen Orten her abgerufen werden soll. Dies ist für beides der Fall. Der User kann global auf den Server zugreifen und Daten hoch und runter laden.\\
+Des Weiteren sollen mehrere gleiche Server online sein, damit viele User-anfragen auf mehrere Server verteilt werden können und somit schneller bearbeitet werden können. Der User sieht aber nur den einen Server. Wenn ein Server offline (ausfällt/gewartet)ist und es sind mehrere online, so bekommt der User davon nichts mit und wird auf einen anderen Server geleitet.\\
+Nachteile sind:\\
+-Die Leistung des Systems ist unberechenbar, wenn die verschiedenen Service im Server-Netzwerk verteilt ist. Dieser Fall existiert in unserem System nicht.\\
+-Es gibt Management Probleme, wenn Server in relativ Unabhängigen Besitz ist. Da die Server unabhängig arbeiten und nur zusammenarbeiten, wenn schon vorhandene Modelle/Datensätze auf einem anderen Server angefragt werden, ist dieser Nachteil zu vernachlässigen.
+
+\subsection*{Was spricht gegen Pipe-and-Filter-Modell?}
+Dieses Modell ist zu mächtig, da die Ströme zwischen Server und Client nicht gekapselt oder verschlüsselt werden sollen. Server und Client müssten immer beim Aufbauen einer Verbindung eine Verschlüsselung vereinbaren und die Datenströme verschlüsseln und entschlüsseln. Dies vermindert oder verhindert sogar spätere Veränderungen vorzunehmen.
+
+\subsection*{Was spricht gegen Broker-Modell?}
+Das Broker-Modell vermindert die Performance, da alle Komponente des Systems nur indirekt angesprochen werden. Des Weiteren hängt die Kommunikation der einzelnen Systeme von vielen Komponenten ab und ist deshalb Fehleranfällig.
