@@ -1,3 +1,22 @@
+\documentclass{book}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{sectsty, graphicx, wrapfig}
+\usepackage[utf8]{inputenc}
+\definecolor{ChapterBlue}{rgb}{0.1,0.6, 0.9}
+\chapterfont{\color{ChapterBlue}}  % sets colour of chapters
+\sectionfont{\color{cyan}}
+\usepackage[font={color=ChapterBlue},figurename=fig.,labelfont={bf}]{caption}
+
+\usepackage[german]{babel}
+\pagestyle{plain}
+\title{Design Document}
+\author{Christian Stricker \and David Klopp \and Markus Vieth}
+\date{\today}
+
+\begin{document}
+
 \section{Model-View-Controller}
 
 \subsection*{Website}
@@ -7,7 +26,7 @@ Im folgenden wird zunächst genauer auf das Erzeugen der UI, in unserem Fall ein
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{Grafik/Diagramm/Pattern/MVC/Website/Kontextdiagramm.png}
+\includegraphics[width=1.0\linewidth]{Grafik/Diagramm/Pattern/MVC/Website/Kontextdiagramm.png}
 \caption[MVC Website Klassen]{MVC-Pattern zum Website anzeigen}
 \end{figure}
 
@@ -30,7 +49,7 @@ Um nun bestimmte Darstellungskomponenten, im weiteren als Plugins bezeichnet, in
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{Grafik/Diagramm/Pattern/MVC/Plugin/Kontextdiagramm.png}
+\includegraphics[width=1.0\linewidth]{Grafik/Diagramm/Pattern/MVC/Plugin/Kontextdiagramm.png}
 \caption[MVC Website Klassen]{MVC-Pattern zum Website anzeigen}
 \end{figure}
 
@@ -57,3 +76,5 @@ Des Weiteren erleichtert diese Aufteilung die Wartung des Systems enorm, da einz
 Bei klar definierten Benutzer-System Interaktionen ist eine verschachtelte Struktur mittels Agenten, wie sie PAC vorsieht, zu umfangreich und nicht notwendig. 
 Die Stärke von PAC liegt darin verschiedene, bestehende Teilsystem miteinander zu verknüpfen. In unserem System ließe sich dies beispielsweise auf die Datenbank und die Implementierung von WEKA anwenden. Da allerdings nur diese beiden Komponenten Daten generieren können, ist es einfacher diese über eine übergeordnete Komponente anzusprechen, als die hohe Komplexität des Pattern in Kauf zu nehmen. 
 Der Fokus unsere Implementierung des Systems liegt auf der Erweiterbarkeit des UIs, die durch MVC leichter und effektiver gegeben ist.
+
+\end{document}
