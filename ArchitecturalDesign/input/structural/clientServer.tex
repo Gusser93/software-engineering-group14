@@ -9,24 +9,20 @@
 \end{figure}
 
 \paragraph{Client}
-Der Client ist der User, der Datensätze, Algorithmen auf den Server hochladen, diese dann dort berechnen lassen und Pakete downloaden kann.
+Der Client ist der für den Nutzer sichtbare Teil des Systems, also die Website, über die auf die serverseitigen Anwendungen zugegriffen werden kann.
 
 \paragraph{Server}
-Der Server bietet dem User den Dienst an, Modelle anhand von schon vorhandenen oder vom User hoch geladenen Datensätzen und Algorithmen zu erstellen. Des Weiteren dient der Server als Datenbank von schon mit verschiedenen Datensätzen erstellten Modellen.\\
+Der Server bietet dem Nutzer den Dienst an Modelle anhand von schon vorhandenen oder von ihm hochgeladenen Datensätzen und Algorithmen zu erstellen. Hierzu verwaltet der Server eine Datenbank, die entsprechende Nutzerdaten, Modelle und Algorithmen beinhaltet.\\
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\linewidth]{Grafik/Diagramm/Pattern/ClientServer/Sequenzdiagramm.png}
 	\caption[]{Client-Server-Sequenzdiagramm}
 \end{figure}\pagebreak
-\noindent Der Client versucht eine Verbindung zum Server aufzubauen, der Server versucht ebenfalls bei Anfrage eine Verbindung zum Client Aufzubauen und schickt dem Client eine Bestätigung, das die Verbindung steht. Danach kann der Client Datensätze/Algorithmen hochladen und dem Server eine Anfrage zum Modelle downloaden schicken.
+\noindent Der Client versucht eine Verbindung zum Server aufzubauen. Der Server versucht ebenfalls bei Anfrage eine Verbindung zum Client aufzubauen und schickt diesem eine Bestätigung, dass die Kommunikation erfolgen kann. Danach kann der Client Datensätze und Algorithmen hochladen und dem Server eine Anfrage zum Modelle berechnen oder downloaden schicken.
 \subsubsection{Was spricht für das Client-Server-Modell?}
-Das Client-Server-Modell wird verwendet, wenn eine Datenbank oder ein Service von verschiedenen Orten her abgerufen werden soll. Dies ist für beides der Fall. Der User kann global auf den Server zugreifen und Daten hoch und runter laden.\\
-Des Weiteren sollen mehrere gleiche Server online sein, damit viele User-anfragen auf mehrere Server verteilt werden können und somit schneller bearbeitet werden können. Der User sieht aber nur den einen Server. Wenn ein Server offline (ausfällt/gewartet)ist und es sind mehrere online, so bekommt der User davon nichts mit und wird auf einen anderen Server geleitet.\\
-Nachteile sind:\\
--Die Leistung des Systems ist unberechenbar, wenn die verschiedenen Service im Server-Netzwerk verteilt ist. Dieser Fall existiert in unserem System nicht.\\
--Es gibt Management Probleme, wenn Server in relativ Unabhängigen Besitz ist. Da die Server unabhängig arbeiten und nur zusammenarbeiten, wenn schon vorhandene Modelle/Datensätze auf einem anderen Server angefragt werden, ist dieser Nachteil zu vernachlässigen.
-
+Das Client-Server-Modell wird verwendet, wenn eine Datenbank oder ein Service von verschiedenen Orten her abrufbar sein soll. Für unser System sind beide dieser Aspekte gegeben. Verschiedene Nutzer können so als Client auf das System zugreifen und Daten hoch- und runterladen. Änderungen am System können rein serverseitig erfolgen ohne Zutun oder Benachrichtigung des Clients, was zu einer erhöhten Flexibilität und Stabilität führt.\\
+Da das System über das REST-Protokoll mehrere Server adressieren können soll, ist es mehr als sinnvoll das Client-Server-Pattern zu verwenden, da andernfalls eine Implementierung dieses Protokolls nur schwer realisierbar wäre. 
 
 
 
