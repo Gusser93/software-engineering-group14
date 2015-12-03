@@ -1,8 +1,9 @@
 Das System, als Web-Applikation, interagiert mit anderen Systemen in seiner Umgebung. TODO kommuniziert zur Übertragung von Daten mit mehreren Clients, welche Anfragen senden und Antworten empfangen, und mit weiteren Servern um Daten in den Datenbanken auszutauschen.\\
 \begin{figure}[h]
+	\vspace{-10pt}
 \centering
 \includegraphics[width=0.9\linewidth]{Grafik/Diagramm/External}
 \caption[Context Diagram]{Context Diagram des Systems im Bezug zu seiner Umgebung}
 \label{fig:External}
 \end{figure}\\
-Die Kommunikation zwischen dem TODO und anderen Servern läuft dabei über das REST-Interface ab. Auch die Clients nutzen REST um Anfragen an das System zu stellen. Die Verbindung wird über HTTPS aufgebaut.
+Die Kommunikation zwischen dem TODO und anderen Servern läuft dabei über das REST-Interface ab. Auch die Clients nutzen REST um Anfragen an das System zu stellen. Die Verbindung wird über HTTPS aufgebaut. Der Nutzer kann zur Kommunikation mit dem System jegliche Software nutzen, welche den Austausch von Daten über HTTPS unterstützt, insbesondere Browser wie Firefox oder Google Chrome. Ein Administrator hat die Möglichkeit über einen Client oder direkt an dem Rechner, auf dem das System läuft, zu arbeiten.
