@@ -1,0 +1,33 @@
+\usepackage[all]{nowidow}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[section]{placeins}
+\usepackage{hyperref}
+\usepackage{ngerman, graphicx, wrapfig, listings, float}
+
+\definecolor{ChapterBlue}{rgb}{0.1,0.6, 0.9}
+\definecolor{VerkehrsBlau}{HTML}{005A8C}
+%\chapterfont{\color{ChapterBlue}}  % sets colour of chapters
+%\sectionfont{\color{cyan}}
+\addtokomafont{chapter}{\color{ChapterBlue}}  % sets colour of chapters
+\addtokomafont{section}{\color{cyan}}
+\usepackage[font={color=ChapterBlue},figurename=fig.,labelfont={bf}]{caption}
+
+\usepackage{epstopdf}
+\pagestyle{plain}
+\title{Design Dokument für TODO}
+\author{Christian Stricker \and Alisha Klein \and David Klopp \and Markus Vieth}
+\date{\today}
+
+\hypersetup{
+	unicode = true,
+	pdfborder = {0 0 0},
+	linktoc = all,
+	colorlinks,
+	linkcolor = black,
+	citecolor = black,
+	filecolor = black,
+	urlcolor = blue
+}
