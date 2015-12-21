@@ -1,32 +1,11 @@
 # software-engineering-group14
 ##WICHTIG!
-- Neue Syntax: 
-
-`\*R{**Text**}{**Priorität**}`
-    
-ersetzt das alte:
-
-    \paragraph{*R---}
-    \begin{description}
-    \item[Statement] \textit{**Text**}
-    \item[Priority] \textit{**Priorität**}
-    \end{description}
-
-- Wenn es zu Problemen kommt, ersteinmal den ganzen Müll der bei der Erstellung des PDFs entsteht löschen, das hilft oft.
-
-##Pattern
-Legende: !  &#x2259; soll genutzt werden;(!) &#x2259; soll vielleicht genutzt werden;&ensp;&ensp;&#x2259; soll nicht genutzt werden
-- Layer &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Markus
-- Repository &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)Markus/David
-- Client-Server &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Christian
-- Pipe and Filter &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
-- Blackboard &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;David
-- Broker &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Christian
-- Model-View-Controller &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	David
-- Presentation-Abstraction-Control	&ensp;&ensp;&ensp;&ensp;(!)	David
-- Mikrokernel &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;!	Markus
-- Reflection &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(!)	Markus
+- Für jeden Abschnitt eine eigene .tex Datei erstellen und mit einer passenden Ordnerstruktur arbeiten, um die Organisation zu vereinfachen
+- Elemente in Modelio anzeigen lassen [Anleitung](https://forge.modelio.org/projects/modelio-user-manual-english-22/wiki/Modeler-_modeler_diagrams_showing_masking_elements "Liest das überhaupt jemand?")
+- Austausch der UML-Diagramme über EMF .uml, bitte ausagekräftige Namen verwenden [Anleitung Export](https://forge.modelio.org/projects/modelio3-usermanual-english-300/wiki/Xmi_exporting "Wie man seine Daten Exportiert")
+- Bilder wenn möglich als Vektorgrafik (.svg, .eps) oder als .png, kein .jpg!
+- Sollte die 64-bit Version Probleme machen, sollte die 32-bit Version getestet werden [Download](https://www.modelio.org/downloads/download-modelio.html "Hier klicken!")
+- Name des Klassendiagramms sollte dem des Packages entsprechen
  
-Beispieldokument
-http://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm
 
+[Beispieldokument](http://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm "sehr kurz")
