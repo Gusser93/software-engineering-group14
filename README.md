@@ -7,6 +7,8 @@
 - Sollte die 64-bit Version Probleme machen, sollte die 32-bit Version getestet werden [Download](https://www.modelio.org/downloads/download-modelio.html "Hier klicken!")
 - Name des Klassendiagramms sollte dem des Packages entsprechen
 - Keine Leerzeichen in Ordnern oder Dateinamen, statt dessen CamelCase verwenden!
+- Für jedes Diagramm, auch jene die nur Angefangen wurden, sollte ein Bild exportiert werden, damit schnell und einfach abgeglichen werden kann
+- Die eigene Arbeit sollte regelmäßig, am Besten an jedem Arbeitstag, gepushed werden, um absprechen zu vereinfachen.
  
 
 [Beispieldokument](http://www.ecs.csun.edu/~rlingard/COMP684/Example2SoftArch.htm "sehr kurz")
