@@ -106,15 +106,14 @@ Modellerstellung:
 1.2 Layer bei Server (Präsentation - Logik - Data)
 
 Generell:
-1.2.1 Präsentation
-1.2.2 Logik:
+1.2.1 Logik:
 - REST-Schnittstelle
 - Sicherheit
 - Paketverwaltung
 - Plugin-Loader
 - Rechteverwaltung
 - Nutzerverwaltung
-1.2.3 Data:
+1.2.2 Data:
 - Datenzugriff
 - Datenbank
 
