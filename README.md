@@ -103,7 +103,7 @@ Modellerstellung:
 (7),(8),(9) verwenden jeweils das MVC-Pattern
 
 
-1.2 Layer bei Server (Präsentation - Logik - Data)
+1.2 Layer bei Server (Logik - Data)
 
 Generell:
 1.2.1 Logik:
