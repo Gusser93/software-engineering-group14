@@ -9,6 +9,7 @@
 - Keine Leerzeichen in Ordnern oder Dateinamen, statt dessen CamelCase verwenden!
 - Für jedes Diagramm, auch jene die nur Angefangen wurden, sollte ein Bild exportiert werden, damit schnell und einfach abgeglichen werden kann
 - Die eigene Arbeit sollte regelmäßig, am Besten an jedem Arbeitstag, gepushed werden, um das Absprechen zu vereinfachen.
+- [Spicker](https://envipath.org/wiki/index.php/Main_Page)
 
 # Coderzeugung
 [Erzeugen](http://forge.modelio.org/projects/javadesigner-modelio3-user-manual-english/wiki/Javadesigner-_javadeveloper_generating_java_code_java_code_generation_functions)
