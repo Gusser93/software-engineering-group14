@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_HZnYsLRgEeWM5oAg5lbnFA" name="seproject">
+  <eAnnotations xmi:id="_HZnYsbRgEeWM5oAg5lbnFA" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_HZnYsrRgEeWM5oAg5lbnFA" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnYs7RgEeWM5oAg5lbnFA" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnYtLRgEeWM5oAg5lbnFA" name="LoginView">
+    <ownedAttribute xmi:id="_HZnYtbRgEeWM5oAg5lbnFA" name="loginModel" visibility="private" type="_HZnaAbRgEeWM5oAg5lbnFA" association="_HZnYurRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYtrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYt7RgEeWM5oAg5lbnFA" name="loginModel" visibility="private" type="_HZnaAbRgEeWM5oAg5lbnFA" association="_HZnYvbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYuLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnYubRgEeWM5oAg5lbnFA" name="showLogin" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnYurRgEeWM5oAg5lbnFA" memberEnd="_HZnYtbRgEeWM5oAg5lbnFA _HZnYu7RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnYu7RgEeWM5oAg5lbnFA" visibility="public" type="_HZnYtLRgEeWM5oAg5lbnFA" association="_HZnYurRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYvLRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnYvbRgEeWM5oAg5lbnFA" memberEnd="_HZnYt7RgEeWM5oAg5lbnFA _HZnYvrRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnYvrRgEeWM5oAg5lbnFA" visibility="public" type="_HZnYtLRgEeWM5oAg5lbnFA" association="_HZnYvbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYv7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnYwLRgEeWM5oAg5lbnFA" name="LoginController">
+    <ownedAttribute xmi:id="_HZnYwbRgEeWM5oAg5lbnFA" name="loginView" visibility="public" type="_HZnYtLRgEeWM5oAg5lbnFA" association="_HZnY2bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYwrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYw7RgEeWM5oAg5lbnFA" name="loginModel" visibility="private" type="_HZnaAbRgEeWM5oAg5lbnFA" association="_HZnY3LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYxLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYxbRgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnY37RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYxrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYx7RgEeWM5oAg5lbnFA" name="loginView" visibility="public" type="_HZnYtLRgEeWM5oAg5lbnFA" association="_HZnY4rRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYyLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYybRgEeWM5oAg5lbnFA" name="loginModel" visibility="private" type="_HZnaAbRgEeWM5oAg5lbnFA" association="_HZnY5bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYyrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYy7RgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnY6LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnYzLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnYzbRgEeWM5oAg5lbnFA" name="userMngr" visibility="private" type="_HZnZN7RgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnYzrRgEeWM5oAg5lbnFA" name="login" visibility="public">
+      <ownedParameter xmi:id="_HZnYz7RgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnY0LRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY0bRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnY0rRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnY07RgEeWM5oAg5lbnFA" name="register" visibility="public">
+      <ownedParameter xmi:id="_HZnY1LRgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnY1bRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY1rRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnY17RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnY2LRgEeWM5oAg5lbnFA" name="logout" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY2bRgEeWM5oAg5lbnFA" memberEnd="_HZnYwbRgEeWM5oAg5lbnFA _HZnY2rRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY2rRgEeWM5oAg5lbnFA" visibility="public" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnY2bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY27RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY3LRgEeWM5oAg5lbnFA" memberEnd="_HZnYw7RgEeWM5oAg5lbnFA _HZnY3bRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY3bRgEeWM5oAg5lbnFA" visibility="public" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnY3LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY3rRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY37RgEeWM5oAg5lbnFA" memberEnd="_HZnYxbRgEeWM5oAg5lbnFA _HZnY4LRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY4LRgEeWM5oAg5lbnFA" visibility="public" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnY37RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY4bRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY4rRgEeWM5oAg5lbnFA" memberEnd="_HZnYx7RgEeWM5oAg5lbnFA _HZnY47RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY47RgEeWM5oAg5lbnFA" visibility="public" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnY4rRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY5LRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY5bRgEeWM5oAg5lbnFA" memberEnd="_HZnYybRgEeWM5oAg5lbnFA _HZnY5rRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY5rRgEeWM5oAg5lbnFA" visibility="public" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnY5bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY57RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY6LRgEeWM5oAg5lbnFA" memberEnd="_HZnYy7RgEeWM5oAg5lbnFA _HZnY6bRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY6bRgEeWM5oAg5lbnFA" visibility="public" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnY6LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY6rRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnY67RgEeWM5oAg5lbnFA" name="AdminView">
+    <ownedAttribute xmi:id="_HZnY7LRgEeWM5oAg5lbnFA" name="adminModel" visibility="private" type="_HZnZM7RgEeWM5oAg5lbnFA" association="_HZnY8bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY7bRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnY7rRgEeWM5oAg5lbnFA" name="adminModel" visibility="private" type="_HZnZM7RgEeWM5oAg5lbnFA" association="_HZnY9LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY77RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnY8LRgEeWM5oAg5lbnFA" name="showAdmin" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY8bRgEeWM5oAg5lbnFA" memberEnd="_HZnY7LRgEeWM5oAg5lbnFA _HZnY8rRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY8rRgEeWM5oAg5lbnFA" visibility="public" type="_HZnY67RgEeWM5oAg5lbnFA" association="_HZnY8bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY87RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnY9LRgEeWM5oAg5lbnFA" memberEnd="_HZnY7rRgEeWM5oAg5lbnFA _HZnY9bRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnY9bRgEeWM5oAg5lbnFA" visibility="public" type="_HZnY67RgEeWM5oAg5lbnFA" association="_HZnY9LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY9rRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnY97RgEeWM5oAg5lbnFA" name="AdminController">
+    <ownedAttribute xmi:id="_HZnY-LRgEeWM5oAg5lbnFA" name="adminView" visibility="public" type="_HZnY67RgEeWM5oAg5lbnFA" association="_HZnZJ7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY-bRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnY-rRgEeWM5oAg5lbnFA" name="adminModel" visibility="private" type="_HZnZM7RgEeWM5oAg5lbnFA" association="_HZnZKrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY-7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnY_LRgEeWM5oAg5lbnFA" name="adminView" visibility="public" type="_HZnY67RgEeWM5oAg5lbnFA" association="_HZnZLbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY_bRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnY_rRgEeWM5oAg5lbnFA" name="adminModel" visibility="private" type="_HZnZM7RgEeWM5oAg5lbnFA" association="_HZnZMLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnY_7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZALRgEeWM5oAg5lbnFA" name="userMngr" visibility="private" type="_HZnZN7RgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnZAbRgEeWM5oAg5lbnFA" name="registerUser" visibility="public">
+      <ownedParameter xmi:id="_HZnZArRgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZA7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZBLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZBbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZBrRgEeWM5oAg5lbnFA" name="addUserToGroup" visibility="public">
+      <ownedParameter xmi:id="_HZnZB7RgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZCLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZCbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZCrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZC7RgEeWM5oAg5lbnFA" name="userGrp" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZDLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZDbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZDrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZD7RgEeWM5oAg5lbnFA" name="removeUserFromGroup" visibility="public">
+      <ownedParameter xmi:id="_HZnZELRgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZEbRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZErRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZE7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZFLRgEeWM5oAg5lbnFA" name="userGrp" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZFbRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZFrRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZF7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZGLRgEeWM5oAg5lbnFA" name="deleteUser" visibility="public">
+      <ownedParameter xmi:id="_HZnZGbRgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZGrRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZG7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZHLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZHbRgEeWM5oAg5lbnFA" name="deleteUserGroup" visibility="public">
+      <ownedParameter xmi:id="_HZnZHrRgEeWM5oAg5lbnFA" name="userGrp" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZH7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZILRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZIbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZIrRgEeWM5oAg5lbnFA" name="makeAdmin" visibility="public">
+      <ownedParameter xmi:id="_HZnZI7RgEeWM5oAg5lbnFA" name="user" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZJLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZJbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZJrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZJ7RgEeWM5oAg5lbnFA" memberEnd="_HZnY-LRgEeWM5oAg5lbnFA _HZnZKLRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZKLRgEeWM5oAg5lbnFA" visibility="public" type="_HZnY97RgEeWM5oAg5lbnFA" association="_HZnZJ7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZKbRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZKrRgEeWM5oAg5lbnFA" memberEnd="_HZnY-rRgEeWM5oAg5lbnFA _HZnZK7RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZK7RgEeWM5oAg5lbnFA" visibility="public" type="_HZnY97RgEeWM5oAg5lbnFA" association="_HZnZKrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZLLRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZLbRgEeWM5oAg5lbnFA" memberEnd="_HZnY_LRgEeWM5oAg5lbnFA _HZnZLrRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZLrRgEeWM5oAg5lbnFA" visibility="public" type="_HZnY97RgEeWM5oAg5lbnFA" association="_HZnZLbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZL7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZMLRgEeWM5oAg5lbnFA" memberEnd="_HZnY_rRgEeWM5oAg5lbnFA _HZnZMbRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZMbRgEeWM5oAg5lbnFA" visibility="public" type="_HZnY97RgEeWM5oAg5lbnFA" association="_HZnZMLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZMrRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZM7RgEeWM5oAg5lbnFA" name="AdminModel">
+    <ownedAttribute xmi:id="_HZnZNLRgEeWM5oAg5lbnFA" name="user" visibility="public" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedAttribute xmi:id="_HZnZNbRgEeWM5oAg5lbnFA" name="userGrp" visibility="public" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZNrRgEeWM5oAg5lbnFA" name="User"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZN7RgEeWM5oAg5lbnFA" name="UserManager"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZOLRgEeWM5oAg5lbnFA" name="UserGroup"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZObRgEeWM5oAg5lbnFA" name="UserView">
+    <ownedOperation xmi:id="_HZnZOrRgEeWM5oAg5lbnFA" name="showUser" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZO7RgEeWM5oAg5lbnFA" name="UserController">
+    <ownedAttribute xmi:id="_HZnZPLRgEeWM5oAg5lbnFA" name="userView" visibility="public" type="_HZnZObRgEeWM5oAg5lbnFA" association="_HZnZWLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZPbRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZPrRgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnZW7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZP7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZQLRgEeWM5oAg5lbnFA" name="userView" visibility="public" type="_HZnZObRgEeWM5oAg5lbnFA" association="_HZnZXrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZQbRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZQrRgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnZYbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZQ7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnZRLRgEeWM5oAg5lbnFA" name="showOwnGroups" visibility="public"/>
+    <ownedOperation xmi:id="_HZnZRbRgEeWM5oAg5lbnFA" name="changePassword" visibility="public">
+      <ownedParameter xmi:id="_HZnZRrRgEeWM5oAg5lbnFA" name="oldPW" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZR7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZSLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZSbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZSrRgEeWM5oAg5lbnFA" name="newPW" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZS7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZTLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZTbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZTrRgEeWM5oAg5lbnFA" name="changeEmail" visibility="public">
+      <ownedParameter xmi:id="_HZnZT7RgEeWM5oAg5lbnFA" name="email" isUnique="false">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZULRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZUbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZUrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZU7RgEeWM5oAg5lbnFA" name="leaveGroup" visibility="public">
+      <ownedParameter xmi:id="_HZnZVLRgEeWM5oAg5lbnFA" name="userGrp" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZVbRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZVrRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZV7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZWLRgEeWM5oAg5lbnFA" memberEnd="_HZnZPLRgEeWM5oAg5lbnFA _HZnZWbRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZWbRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZO7RgEeWM5oAg5lbnFA" association="_HZnZWLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZWrRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZW7RgEeWM5oAg5lbnFA" memberEnd="_HZnZPrRgEeWM5oAg5lbnFA _HZnZXLRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZXLRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZO7RgEeWM5oAg5lbnFA" association="_HZnZW7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZXbRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZXrRgEeWM5oAg5lbnFA" memberEnd="_HZnZQLRgEeWM5oAg5lbnFA _HZnZX7RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZX7RgEeWM5oAg5lbnFA" visibility="public" type="_HZnZO7RgEeWM5oAg5lbnFA" association="_HZnZXrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZYLRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZYbRgEeWM5oAg5lbnFA" memberEnd="_HZnZQrRgEeWM5oAg5lbnFA _HZnZYrRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZYrRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZO7RgEeWM5oAg5lbnFA" association="_HZnZYbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZY7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZZLRgEeWM5oAg5lbnFA" name="ModelView">
+    <ownedAttribute xmi:id="_HZnZZbRgEeWM5oAg5lbnFA" name="modelModel" visibility="private" type="_HZnaI7RgEeWM5oAg5lbnFA" association="_HZnZaLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZZrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnZZ7RgEeWM5oAg5lbnFA" name="showView" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZaLRgEeWM5oAg5lbnFA" memberEnd="_HZnZZbRgEeWM5oAg5lbnFA _HZnZabRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZabRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZZLRgEeWM5oAg5lbnFA" association="_HZnZaLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZarRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZa7RgEeWM5oAg5lbnFA" name="ModelController">
+    <generalization xmi:id="_HZnZbLRgEeWM5oAg5lbnFA" general="_HZnaHbRgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnZbbRgEeWM5oAg5lbnFA" name="modelView" visibility="public" type="_HZnZZLRgEeWM5oAg5lbnFA" association="_HZnZfbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZbrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZb7RgEeWM5oAg5lbnFA" name="modelModel" visibility="private" type="_HZnaI7RgEeWM5oAg5lbnFA" association="_HZnZgLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZcLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZcbRgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnZg7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZcrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZc7RgEeWM5oAg5lbnFA" name="packageMngr" visibility="private" type="_HZnZ_rRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnZdLRgEeWM5oAg5lbnFA" name="createModel" visibility="public">
+      <ownedParameter xmi:id="_HZnZdbRgEeWM5oAg5lbnFA" name="data" type="_HZnZh7RgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZdrRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZd7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZeLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZebRgEeWM5oAg5lbnFA" name="algo" type="_HZnZiLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZerRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZe7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZfLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZfbRgEeWM5oAg5lbnFA" memberEnd="_HZnZbbRgEeWM5oAg5lbnFA _HZnZfrRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZfrRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZa7RgEeWM5oAg5lbnFA" association="_HZnZfbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZf7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZgLRgEeWM5oAg5lbnFA" memberEnd="_HZnZb7RgEeWM5oAg5lbnFA _HZnZgbRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZgbRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZa7RgEeWM5oAg5lbnFA" association="_HZnZgLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZgrRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZg7RgEeWM5oAg5lbnFA" memberEnd="_HZnZcbRgEeWM5oAg5lbnFA _HZnZhLRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZhLRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZa7RgEeWM5oAg5lbnFA" association="_HZnZg7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZhbRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZhrRgEeWM5oAg5lbnFA" name="Model"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZh7RgEeWM5oAg5lbnFA" name="Dataset"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZiLRgEeWM5oAg5lbnFA" name="Algorithm"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZibRgEeWM5oAg5lbnFA" name="PackageView">
+    <ownedAttribute xmi:id="_HZnZirRgEeWM5oAg5lbnFA" name="packageModel" visibility="private" type="_HZnZ_LRgEeWM5oAg5lbnFA" association="_HZnZjbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZi7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnZjLRgEeWM5oAg5lbnFA" name="showView" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZjbRgEeWM5oAg5lbnFA" memberEnd="_HZnZirRgEeWM5oAg5lbnFA _HZnZjrRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZjrRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZibRgEeWM5oAg5lbnFA" association="_HZnZjbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZj7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZkLRgEeWM5oAg5lbnFA" name="PackageController">
+    <generalization xmi:id="_HZnZkbRgEeWM5oAg5lbnFA" general="_HZnaHbRgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnZkrRgEeWM5oAg5lbnFA" name="packageView" visibility="public" type="_HZnZibRgEeWM5oAg5lbnFA" association="_HZnZ8LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZk7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZlLRgEeWM5oAg5lbnFA" name="packageModel" visibility="private" type="_HZnZ_LRgEeWM5oAg5lbnFA" association="_HZnZ87RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZlbRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZlrRgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnZ9rRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZl7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZmLRgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnZ-bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZmbRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnZmrRgEeWM5oAg5lbnFA" name="packageMngr" visibility="private" type="_HZnZ_rRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedAttribute xmi:id="_HZnZm7RgEeWM5oAg5lbnFA" name="privilegeMngr" visibility="private" type="_HZnZ_7RgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedAttribute xmi:id="_HZnZnLRgEeWM5oAg5lbnFA" name="securityMngr" visibility="private" type="_HZnaELRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnZnbRgEeWM5oAg5lbnFA" name="allowPackageAccessToUsers" visibility="public">
+      <ownedParameter xmi:id="_HZnZnrRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZn7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZoLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZobRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZorRgEeWM5oAg5lbnFA" name="users" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZo7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZpLRgEeWM5oAg5lbnFA" name="allowPackageAccessToUserGroup" visibility="public">
+      <ownedParameter xmi:id="_HZnZpbRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZprRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZp7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZqLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZqbRgEeWM5oAg5lbnFA" name="userGrp" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZqrRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZq7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZrLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZrbRgEeWM5oAg5lbnFA" name="disallowPackageAccessToUsers" visibility="public">
+      <ownedParameter xmi:id="_HZnZrrRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZr7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZsLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZsbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZsrRgEeWM5oAg5lbnFA" name="users" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZs7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZtLRgEeWM5oAg5lbnFA" name="disallowPackageAccessToUserGroup" visibility="public">
+      <ownedParameter xmi:id="_HZnZtbRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZtrRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZt7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZuLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZubRgEeWM5oAg5lbnFA" name="userGrp" type="_HZnZOLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZurRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZu7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZvLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZvbRgEeWM5oAg5lbnFA" name="uploadAndSaveDataset" visibility="public">
+      <ownedParameter xmi:id="_HZnZvrRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZv7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZwLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZwbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZwrRgEeWM5oAg5lbnFA" name="data" type="_HZnZh7RgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZw7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZxLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZxbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZxrRgEeWM5oAg5lbnFA" name="uploadAndSaveModel" visibility="public">
+      <ownedParameter xmi:id="_HZnZx7RgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZyLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZybRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZyrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZy7RgEeWM5oAg5lbnFA" name="model" type="_HZnZhrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZzLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZzbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZzrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZz7RgEeWM5oAg5lbnFA" name="uploadAndSaveAlgorithm" visibility="public">
+      <ownedParameter xmi:id="_HZnZ0LRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ0bRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ0rRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ07RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZ1LRgEeWM5oAg5lbnFA" name="algo" type="_HZnZiLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ1bRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ1rRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ17RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZ2LRgEeWM5oAg5lbnFA" name="uploadAndSavePackage" visibility="public">
+      <ownedParameter xmi:id="_HZnZ2bRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ2rRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ27RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ3LRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZ3bRgEeWM5oAg5lbnFA" name="downloadPackage" visibility="public">
+      <ownedParameter xmi:id="_HZnZ3rRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ37RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ4LRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ4bRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZ4rRgEeWM5oAg5lbnFA" name="deletePackage" visibility="public">
+      <ownedParameter xmi:id="_HZnZ47RgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ5LRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ5bRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ5rRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnZ57RgEeWM5oAg5lbnFA" name="deleteEntityInPackage" visibility="public">
+      <ownedParameter xmi:id="_HZnZ6LRgEeWM5oAg5lbnFA" name="package" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ6bRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ6rRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ67RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnZ7LRgEeWM5oAg5lbnFA" name="entity" type="_HZnaEbRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnZ7bRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ7rRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnZ77RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZ8LRgEeWM5oAg5lbnFA" memberEnd="_HZnZkrRgEeWM5oAg5lbnFA _HZnZ8bRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZ8bRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZkLRgEeWM5oAg5lbnFA" association="_HZnZ8LRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ8rRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZ87RgEeWM5oAg5lbnFA" memberEnd="_HZnZlLRgEeWM5oAg5lbnFA _HZnZ9LRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZ9LRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZkLRgEeWM5oAg5lbnFA" association="_HZnZ87RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ9bRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZ9rRgEeWM5oAg5lbnFA" memberEnd="_HZnZlrRgEeWM5oAg5lbnFA _HZnZ97RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZ97RgEeWM5oAg5lbnFA" visibility="public" type="_HZnZkLRgEeWM5oAg5lbnFA" association="_HZnZ9rRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ-LRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnZ-bRgEeWM5oAg5lbnFA" memberEnd="_HZnZmLRgEeWM5oAg5lbnFA _HZnZ-rRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnZ-rRgEeWM5oAg5lbnFA" visibility="public" type="_HZnZkLRgEeWM5oAg5lbnFA" association="_HZnZ-bRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnZ-7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZ_LRgEeWM5oAg5lbnFA" name="PackageModel">
+    <ownedAttribute xmi:id="_HZnZ_bRgEeWM5oAg5lbnFA" name="packages" visibility="private" type="_HZnaALRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZ_rRgEeWM5oAg5lbnFA" name="PackageManager"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnZ_7RgEeWM5oAg5lbnFA" name="PrivilegeManager"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaALRgEeWM5oAg5lbnFA" name="Package"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaAbRgEeWM5oAg5lbnFA" name="LoginModel">
+    <ownedAttribute xmi:id="_HZnaArRgEeWM5oAg5lbnFA" name="user" visibility="public" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaA7RgEeWM5oAg5lbnFA" name="LoginSession">
+    <ownedAttribute xmi:id="_HZnaBLRgEeWM5oAg5lbnFA" name="currentUser" visibility="private" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnaBbRgEeWM5oAg5lbnFA" name="destroySession" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaBrRgEeWM5oAg5lbnFA" name="init" visibility="public">
+      <ownedParameter xmi:id="_HZnaB7RgEeWM5oAg5lbnFA" name="currentUser" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaCLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaCbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaCrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnaC7RgEeWM5oAg5lbnFA" name="getCurrentUser" visibility="public">
+      <ownedParameter xmi:id="_HZnaDLRgEeWM5oAg5lbnFA" type="_HZnZNrRgEeWM5oAg5lbnFA" isUnique="false" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaDbRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaDrRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaD7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaELRgEeWM5oAg5lbnFA" name="SecurityManager"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaEbRgEeWM5oAg5lbnFA" name="Entity"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaErRgEeWM5oAg5lbnFA" name="ModelView">
+    <generalization xmi:id="_HZnaE7RgEeWM5oAg5lbnFA" general="_HZnaGrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaFLRgEeWM5oAg5lbnFA" name="DatasetView">
+    <generalization xmi:id="_HZnaFbRgEeWM5oAg5lbnFA" general="_HZnaGrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaFrRgEeWM5oAg5lbnFA" name="AlgorithmView">
+    <generalization xmi:id="_HZnaF7RgEeWM5oAg5lbnFA" general="_HZnaGrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaGLRgEeWM5oAg5lbnFA" name="PackageView">
+    <generalization xmi:id="_HZnaGbRgEeWM5oAg5lbnFA" general="_HZnaGrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaGrRgEeWM5oAg5lbnFA" name="EntityView" isAbstract="true">
+    <ownedAttribute xmi:id="_HZnaG7RgEeWM5oAg5lbnFA" name="model" visibility="private" type="_HZnaILRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnaHLRgEeWM5oAg5lbnFA" name="showView" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaHbRgEeWM5oAg5lbnFA" name="EntityController" isAbstract="true">
+    <ownedAttribute xmi:id="_HZnaHrRgEeWM5oAg5lbnFA" name="view" visibility="public" type="_HZnaGrRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedAttribute xmi:id="_HZnaH7RgEeWM5oAg5lbnFA" name="model" visibility="private" type="_HZnaILRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaILRgEeWM5oAg5lbnFA" name="EntityModel" isAbstract="true">
+    <ownedAttribute xmi:id="_HZnaIbRgEeWM5oAg5lbnFA" name="entity" visibility="private" type="_HZnaEbRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedAttribute xmi:id="_HZnaIrRgEeWM5oAg5lbnFA" name="view" visibility="public" type="_HZnaGrRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaI7RgEeWM5oAg5lbnFA" name="ModelModel">
+    <generalization xmi:id="_HZnaJLRgEeWM5oAg5lbnFA" general="_HZnaILRgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnaJbRgEeWM5oAg5lbnFA" name="model" visibility="private" type="_HZnZhrRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaJrRgEeWM5oAg5lbnFA" name="DatasetModel">
+    <generalization xmi:id="_HZnaJ7RgEeWM5oAg5lbnFA" general="_HZnaILRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaKLRgEeWM5oAg5lbnFA" name="AlgorithmModel">
+    <generalization xmi:id="_HZnaKbRgEeWM5oAg5lbnFA" general="_HZnaILRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaKrRgEeWM5oAg5lbnFA" name="PackageModel">
+    <generalization xmi:id="_HZnaK7RgEeWM5oAg5lbnFA" general="_HZnaILRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaLLRgEeWM5oAg5lbnFA" name="EntityFabric" isAbstract="true">
+    <ownedOperation xmi:id="_HZnaLbRgEeWM5oAg5lbnFA" name="makeModel" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaLrRgEeWM5oAg5lbnFA" name="makeDataset" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaL7RgEeWM5oAg5lbnFA" name="makeAlgorithm" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaMLRgEeWM5oAg5lbnFA" name="makePackage" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaMbRgEeWM5oAg5lbnFA" name="makePrediction" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaMrRgEeWM5oAg5lbnFA" name="DatasetFabric">
+    <generalization xmi:id="_HZnaM7RgEeWM5oAg5lbnFA" general="_HZnaLLRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaNLRgEeWM5oAg5lbnFA" name="AlgorithmFabric">
+    <generalization xmi:id="_HZnaNbRgEeWM5oAg5lbnFA" general="_HZnaLLRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaNrRgEeWM5oAg5lbnFA" name="PackageFabric">
+    <generalization xmi:id="_HZnaN7RgEeWM5oAg5lbnFA" general="_HZnaLLRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaOLRgEeWM5oAg5lbnFA" name="ModelFabric">
+    <generalization xmi:id="_HZnaObRgEeWM5oAg5lbnFA" general="_HZnaLLRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaOrRgEeWM5oAg5lbnFA" name="PredictionView">
+    <ownedAttribute xmi:id="_HZnaO7RgEeWM5oAg5lbnFA" name="predictionModel" visibility="private" type="_HZnaWLRgEeWM5oAg5lbnFA" association="_HZnaPrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaPLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnaPbRgEeWM5oAg5lbnFA" name="showView" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnaPrRgEeWM5oAg5lbnFA" memberEnd="_HZnaO7RgEeWM5oAg5lbnFA _HZnaP7RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnaP7RgEeWM5oAg5lbnFA" visibility="public" type="_HZnaOrRgEeWM5oAg5lbnFA" association="_HZnaPrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaQLRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaQbRgEeWM5oAg5lbnFA" name="PredictionController">
+    <generalization xmi:id="_HZnaQrRgEeWM5oAg5lbnFA" general="_HZnaHbRgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnaQ7RgEeWM5oAg5lbnFA" name="predictionView" visibility="public" type="_HZnaOrRgEeWM5oAg5lbnFA" association="_HZnaUrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaRLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnaRbRgEeWM5oAg5lbnFA" name="predictionModel" visibility="private" type="_HZnaWLRgEeWM5oAg5lbnFA" association="_HZnaVbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaRrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HZnaR7RgEeWM5oAg5lbnFA" name="evaluate" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaSLRgEeWM5oAg5lbnFA" name="cancelEvaluation" visibility="public"/>
+    <ownedOperation xmi:id="_HZnaSbRgEeWM5oAg5lbnFA" name="createPrediction" visibility="public">
+      <ownedParameter xmi:id="_HZnaSrRgEeWM5oAg5lbnFA" name="model" type="_HZnZhrRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaS7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaTLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaTbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnaTrRgEeWM5oAg5lbnFA" name="data" type="_HZnZh7RgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaT7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaULRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaUbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnaUrRgEeWM5oAg5lbnFA" memberEnd="_HZnaQ7RgEeWM5oAg5lbnFA _HZnaU7RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnaU7RgEeWM5oAg5lbnFA" visibility="public" type="_HZnaQbRgEeWM5oAg5lbnFA" association="_HZnaUrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaVLRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnaVbRgEeWM5oAg5lbnFA" memberEnd="_HZnaRbRgEeWM5oAg5lbnFA _HZnaVrRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnaVrRgEeWM5oAg5lbnFA" visibility="public" type="_HZnaQbRgEeWM5oAg5lbnFA" association="_HZnaVbRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaV7RgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaWLRgEeWM5oAg5lbnFA" name="PredictionModel">
+    <ownedAttribute xmi:id="_HZnaWbRgEeWM5oAg5lbnFA" name="prediction" visibility="private" type="_HZnaWrRgEeWM5oAg5lbnFA" isUnique="false"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaWrRgEeWM5oAg5lbnFA" name="prediction"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaW7RgEeWM5oAg5lbnFA" name="HttpServlet" isAbstract="true">
+    <ownedOperation xmi:id="_HZnaXLRgEeWM5oAg5lbnFA" name="doGet" visibility="public">
+      <ownedParameter xmi:id="_HZnaXbRgEeWM5oAg5lbnFA" name="request" type="_HZnagbRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaXrRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaX7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaYLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnaYbRgEeWM5oAg5lbnFA" name="response" type="_HZnagLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaYrRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaY7RgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaZLRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnaZbRgEeWM5oAg5lbnFA" name="doPost" visibility="public">
+      <ownedParameter xmi:id="_HZnaZrRgEeWM5oAg5lbnFA" name="request" type="_HZnagbRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaZ7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaaLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaabRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnaarRgEeWM5oAg5lbnFA" name="response" type="_HZnagLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaa7RgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnabLRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnabbRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnabrRgEeWM5oAg5lbnFA" name="doPut" visibility="public">
+      <ownedParameter xmi:id="_HZnab7RgEeWM5oAg5lbnFA" name="request" type="_HZnagbRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnacLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnacbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnacrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnac7RgEeWM5oAg5lbnFA" name="response" type="_HZnagLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnadLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnadbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnadrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HZnad7RgEeWM5oAg5lbnFA" name="doDelete" visibility="public">
+      <ownedParameter xmi:id="_HZnaeLRgEeWM5oAg5lbnFA" name="request" type="_HZnagbRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnaebRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaerRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnae7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+      <ownedParameter xmi:id="_HZnafLRgEeWM5oAg5lbnFA" name="response" type="_HZnagLRgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnafbRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnafrRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnaf7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnagLRgEeWM5oAg5lbnFA" name="HttpResponse"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnagbRgEeWM5oAg5lbnFA" name="HttpRequest"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnagrRgEeWM5oAg5lbnFA" name="EntityServlet" isAbstract="true">
+    <generalization xmi:id="_HZnag7RgEeWM5oAg5lbnFA" general="_HZnaW7RgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnahLRgEeWM5oAg5lbnFA" name="entityController" visibility="public" type="_HZnaHbRgEeWM5oAg5lbnFA" association="_HZnaiLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnahbRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnahrRgEeWM5oAg5lbnFA" name="entityFabric" visibility="public" type="_HZnaLLRgEeWM5oAg5lbnFA" association="_HZnai7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnah7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnaiLRgEeWM5oAg5lbnFA" memberEnd="_HZnahLRgEeWM5oAg5lbnFA _HZnaibRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnaibRgEeWM5oAg5lbnFA" visibility="public" type="_HZnagrRgEeWM5oAg5lbnFA" association="_HZnaiLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnairRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnai7RgEeWM5oAg5lbnFA" memberEnd="_HZnahrRgEeWM5oAg5lbnFA _HZnajLRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnajLRgEeWM5oAg5lbnFA" visibility="public" type="_HZnagrRgEeWM5oAg5lbnFA" association="_HZnai7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnajbRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnajrRgEeWM5oAg5lbnFA" name="LoginServlet">
+    <generalization xmi:id="_HZnaj7RgEeWM5oAg5lbnFA" general="_HZnaW7RgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnakLRgEeWM5oAg5lbnFA" name="loginController" visibility="private" type="_HZnYwLRgEeWM5oAg5lbnFA" association="_HZnakrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnakbRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnakrRgEeWM5oAg5lbnFA" memberEnd="_HZnakLRgEeWM5oAg5lbnFA _HZnak7RgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnak7RgEeWM5oAg5lbnFA" visibility="public" type="_HZnajrRgEeWM5oAg5lbnFA" association="_HZnakrRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnalLRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnalbRgEeWM5oAg5lbnFA" name="DatasetController">
+    <generalization xmi:id="_HZnalrRgEeWM5oAg5lbnFA" general="_HZnaHbRgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnal7RgEeWM5oAg5lbnFA" name="loginSession" visibility="private" type="_HZnaA7RgEeWM5oAg5lbnFA" association="_HZnan7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnamLRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HZnambRgEeWM5oAg5lbnFA" name="packageMngr" visibility="private" type="_HZnZ_rRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnamrRgEeWM5oAg5lbnFA" name="createDataset" visibility="public">
+      <ownedParameter xmi:id="_HZnam7RgEeWM5oAg5lbnFA" name="data" type="_HZnZh7RgEeWM5oAg5lbnFA" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZnanLRgEeWM5oAg5lbnFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnanbRgEeWM5oAg5lbnFA" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnanrRgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnan7RgEeWM5oAg5lbnFA" memberEnd="_HZnal7RgEeWM5oAg5lbnFA _HZnaoLRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnaoLRgEeWM5oAg5lbnFA" visibility="public" type="_HZnalbRgEeWM5oAg5lbnFA" association="_HZnan7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaobRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaorRgEeWM5oAg5lbnFA" name="AlgorithmController">
+    <generalization xmi:id="_HZnao7RgEeWM5oAg5lbnFA" general="_HZnaHbRgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnapLRgEeWM5oAg5lbnFA" name="packageMngr" visibility="private" type="_HZnZ_rRgEeWM5oAg5lbnFA" isUnique="false"/>
+    <ownedOperation xmi:id="_HZnapbRgEeWM5oAg5lbnFA" name="allowedParameterTypes" visibility="public">
+      <ownedParameter xmi:id="_HZnaprRgEeWM5oAg5lbnFA" isUnique="false" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HZnap7RgEeWM5oAg5lbnFA" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaqLRgEeWM5oAg5lbnFA" name="UserServlet">
+    <generalization xmi:id="_HZnaqbRgEeWM5oAg5lbnFA" general="_HZnaW7RgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnaqrRgEeWM5oAg5lbnFA" name="userController" visibility="private" type="_HZnZO7RgEeWM5oAg5lbnFA" association="_HZnarLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnaq7RgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnarLRgEeWM5oAg5lbnFA" memberEnd="_HZnaqrRgEeWM5oAg5lbnFA _HZnarbRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnarbRgEeWM5oAg5lbnFA" visibility="public" type="_HZnaqLRgEeWM5oAg5lbnFA" association="_HZnarLRgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnarrRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnar7RgEeWM5oAg5lbnFA" name="AdminServlet">
+    <generalization xmi:id="_HZnasLRgEeWM5oAg5lbnFA" general="_HZnaW7RgEeWM5oAg5lbnFA"/>
+    <ownedAttribute xmi:id="_HZnasbRgEeWM5oAg5lbnFA" name="adminController" visibility="private" type="_HZnY97RgEeWM5oAg5lbnFA" association="_HZnas7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnasrRgEeWM5oAg5lbnFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HZnas7RgEeWM5oAg5lbnFA" memberEnd="_HZnasbRgEeWM5oAg5lbnFA _HZnatLRgEeWM5oAg5lbnFA">
+    <ownedEnd xmi:id="_HZnatLRgEeWM5oAg5lbnFA" visibility="public" type="_HZnar7RgEeWM5oAg5lbnFA" association="_HZnas7RgEeWM5oAg5lbnFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HZnatbRgEeWM5oAg5lbnFA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnatrRgEeWM5oAg5lbnFA" name="ModelServlet">
+    <generalization xmi:id="_HZnat7RgEeWM5oAg5lbnFA" general="_HZnagrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnauLRgEeWM5oAg5lbnFA" name="DatasetServlet">
+    <generalization xmi:id="_HZnaubRgEeWM5oAg5lbnFA" general="_HZnagrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaurRgEeWM5oAg5lbnFA" name="AlgorithmServlet">
+    <generalization xmi:id="_HZnau7RgEeWM5oAg5lbnFA" general="_HZnagrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnavLRgEeWM5oAg5lbnFA" name="PackageServlet">
+    <generalization xmi:id="_HZnavbRgEeWM5oAg5lbnFA" general="_HZnagrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnavrRgEeWM5oAg5lbnFA" name="PredictionServlet">
+    <generalization xmi:id="_HZnav7RgEeWM5oAg5lbnFA" general="_HZnagrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnawLRgEeWM5oAg5lbnFA" name="PredictionModel">
+    <generalization xmi:id="_HZnawbRgEeWM5oAg5lbnFA" general="_HZnaILRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnawrRgEeWM5oAg5lbnFA" name="PredictionView">
+    <generalization xmi:id="_HZnaw7RgEeWM5oAg5lbnFA" general="_HZnaGrRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_HZnaxLRgEeWM5oAg5lbnFA" name="PredictionFabric">
+    <generalization xmi:id="_HZnaxbRgEeWM5oAg5lbnFA" general="_HZnaLLRgEeWM5oAg5lbnFA"/>
+  </packagedElement>
+</uml:Model>
