@@ -1,0 +1,58 @@
+﻿Nutzerumgebung:
+
+Die Nutzerumgebung umfasst den Login-Bereich, sowie den Benutzer- und Adminbereich. Die Bereiche sind nach dem Model-View-Controller-Prinzip entworfen.
+Alle drei Teile werden über eine View-Klasse repräsentiert.
+Weiterhin haben alle drei Bereiche jeweils einen Controller. Jeder Controller nimmt die Anfragen der entsprechenden View-Klassen entgegen und 
+verarbeitet diese. Zu den Anfragen gehören im Login-Bereich anmelden oder abmelden oder neu registrieren.
+Im User-Bereich kann der angemeldete Benutzer seine Angaben  ändern, sowie seine Gruppenzugehörigkeit  - soweit er die Berechtigung hat - bearbeiten.
+Ein angemeldeter Administrator kann verschiedene Benutzeroperationen machen, wie Registrieren, Gruppen zuweisen, Benutzer oder -Gruppen löschen sowie 
+neue Administratoren benennen.
+Der Adminbereich hat eine Model-Klasse, in welcher der aktuell bearbeitete Benutzer bzw. die aktuelle bearbeitete Benutzergruppe  zwischengespeichert wird.
+
+Login-Bereich und User-Bereich teilen sich als Model eine Session-Klasse, welche die Informationen zum aktuell angemeldeten Benutzer hält.
+
+//@Markus Wichtig:Bitte überprüfen, ob die URL-Pattern sich mit den Endpoints der REST-Schnitstelle im Server decken
+
+Presentation-closeUp:
+Die Präsentation wird über Servlets gehandelt. Diese werden bei folgenden URL-Pattern aufgerufen:
+
+Login-Servlet
+*/login/*
+
+User-Servlet
+*/user/*
+*/usergroup/*
+
+Admin-Servlet
+*/admin/*
+
+Prediction-Servlet
+*/model/prediction/*
+
+Model-Servlet
+*/model/*
+
+Datensatz-Servlet
+*/package/dataset/*
+*/model/dataset/*
+
+Algorithmus-Servlet
+*/algorithm/*
+
+Package-Servlet
+*/package/*
+
+Diese Servlets greifen an den entsprechenden URIS. Je nach URL-Pattern wird das entsprechende Servlet angesprochen.
+Jedes Servlet kann auf die notwendigen Entity-Controller zugreifen, um das Request ordentlich abzuarbeiten. Der Controller erhält vom
+Servlet die Information, was gefordert wird und gibt diese über entsprechende Manager-Klassen an das Server-Backend weiter.
+
+Die Erstellung der Model-View-Controller-Struktur der Entitys wird über eine Abstract Factory geregelt. Dieses Pattern sorgt dafür,
+dass immer der richtige Controller zusammen mit der richtigen View und dem entsprechenden Model erstellt wird.
+
+Prognosen-/Model-/Package:
+Alle drei Bereiche sind nach dem Model-View-Controller-Prinzip strukturiert. Die Views leiten alle von der Entity-View ab (s.Presentation).
+Jeder Bereich hat einen eigenen Controller, welcher Anfragen durch die View entgegen nimmt und diese an den entsprechenden Handler im Server weiterleitet.
+Entsprechende Handler sind Package-Manager, Security-Manager und Privilege-Manager. Weiterhin hat jeder Controller und jedeView Zugriff auf das entsprechende 
+Model. Der Package-Controller hat außerdem Zugriff auf die Login-Session. Somit kann der current_user immer direkt dem Handler übergeben werden.
+
+
