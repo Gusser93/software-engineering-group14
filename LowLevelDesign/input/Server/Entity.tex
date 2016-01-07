@@ -1,6 +1,9 @@
 \section{Entity}
 
-% hier ne Grafik von Entity und den Ableitungen davon
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\linewidth]{Grafik/Klassendiagramme/Entity.png}
+\end{figure}
 
 Jedes Package, Dataset, Model, jeder Algorithm und jede Prediction leiten von der Klasse Entity ab und haben somit einen eindeutige id, sowie uri und einen Namen. Über die Kommunikation mit den darüber liegenden Schichten wird der PluginLoader instruiert je nach Bedarf die jeweilig angeforderten Entities zu erzeugen bzw. abzurufen. Durch die Anbindung an die Weka-Library können die Datsets oder die Models verarbeitet werden, um so neue Predictions zu generieren.
 Sämtliche administrativen Anfragen die den User oder Usergoups betreffen werden durch den UserManager gehandhabt. Dieser kooperiert über den Adapter mit dem PrivilegeManager, dem PackageManager und dem SecurityManager um die Anfragen zu beantworten.
