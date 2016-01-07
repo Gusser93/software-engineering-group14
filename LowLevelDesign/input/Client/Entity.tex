@@ -1,0 +1,22 @@
+\section{Entity MVC}
+
+\subsection{Beispiel der Model-Subklassen}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{Grafik/Klassendiagramme/Entity_mvc_sub.png}
+\caption{Model MVC}
+\end{figure}
+
+Alle drei Bereiche: Prognosen, Model, und Package, sind wie eben angesprochen nach dem Model-View-Controller-Prinzip strukturiert. Die Views leiten alle von der Entity-View ab (s.Presentation).
+Jeder Bereich hat einen eigenen Controller, welcher Anfragen durch die View entgegen nimmt und diese an den entsprechenden Handler im Server weiterleitet.
+Entsprechende Handler sind Package-Manager, Security-Manager und Privilege-Manager. Weiterhin hat jeder Controller und jede View Zugriff auf das entsprechende 
+Model. Der Package-Controller hat außerdem Zugriff auf die Login-Session. Somit kann der current\_user immer direkt dem Handler übergeben werden.
+
+\subsection{Beispiel der Package-Subklassen}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\linewidth]{Grafik/Klassendiagramme/Entity_mvc_sub2.png}
+\caption{Package MVC}
+\end{figure}
