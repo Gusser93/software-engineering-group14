@@ -1,4 +1,7 @@
 # software-engineering-group14
+# Notizen
+- Apache CFX statt Servlets
+
 ##WICHTIG!
 - Für jeden Abschnitt eine eigene .tex Datei erstellen und mit einer passenden Ordnerstruktur arbeiten, um die Organisation zu vereinfachen
 - Elemente in Modelio anzeigen lassen [Anleitung](https://forge.modelio.org/projects/modelio-user-manual-english-22/wiki/Modeler-_modeler_diagrams_showing_masking_elements "Liest das überhaupt jemand?")
