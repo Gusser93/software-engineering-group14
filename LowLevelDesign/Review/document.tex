@@ -1,0 +1,67 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\title{Review Document -- Requirements Document}
+\author{David Klopp \and Christian Stricker \and Markus Vieth \and Alisha Klein}
+\date{\today}
+%Requirement, Problem, Solution
+\newcommand{\RPS}[3]{\subsection{#1} \subsubsection*{Problem:} #2 \subsection*{Lösung:} #3} 
+
+\begin{document}
+\maketitle
+\cleardoublepage
+\tableofcontents 
+\newpage
+\section{Introduction}
+Der Gruppe 11 sind einige Fehler beim Formulieren des Low-Level Documents unterlaufen, welche im Folgenden behandelt werde.
+\section{Low-Level-Design}
+
+\RPS{Klasse Object}{%
+Der Klassenname "Object" ist irreführend. Es könnte die Java Klasse Object gemeint sein, von der abgeleitet werden soll. %
+}{%
+Ändere den Klassennamen in "SystemObject" um zu verdeutlichen, dass eine eigene implementierte Klasse gemeint ist und um Sideeffects zu vermeiden.%
+}
+
+\RPS{Sicherheit}{%
+	"ClientCrypter" und "ServerCrypter" sind nicht notwendig, da eine verschlüsselte Https-Verbindung zwischen Client und Server und verschiedenen anderen Servern aufgebaut wird. Die "Crypter" würden außerdem innerhalb vom Server miteinander verschlüsselt kommunizieren, wodurch die Performance erheblich sinken würde. %
+}{%
+"ClientCrypter" und "ServerCrypter" können, ohne größere Nachteile vollständig entfernt werden.%
+}
+
+\RPS{Sequenzdiagramm}{%
+	Die Funktion "getModel(id)" gehört zu der PackageManager Klasse und nicht zu dem "ModelInterface". Ein Interface ist nicht in der Lage dazu Methoden aufzurufen. Des weiteren ist das Sequenzdiagramm zur Package Generierung in diesem Punkte ebenfalls falsch, da die Lebenszeit der Objekte falsch eingetragen wurde. (z.B Der "PackageManager" existiert vor dem "ModelInterface".%
+}{%
+Die Funktion "getModel(id)" sollte im PackageManager implementiert werden. Die Lebenszeit der Objekte muss angepasst werden, so dass der "PackageManager" vor dem "ModelInterface" existiert.%
+}
+
+\RPS{Weka-Anbindung}{%
+	Eine Anbindung der Weka-Library an das System fehlt vollständig. %
+}{%
+Die Weka-Library müsste derart an das System angebunden werden, dass eine  Schnittstelle zur Verfügung steht die auf Basis der Klassen des Servers operieren kann.%
+}
+
+\RPS{Upload und Download}{%
+	Datensätze und Algorithmen können nicht hochgeladen und erstellte Pakete nicht gedownloaden werden. %
+}{%
+Es müssen Funktionen im "PackageManger" und den anderen entsprechenden Klassen bereitgestellt werden die die Funktionen für den Datei Up/Download implementieren.%
+}
+
+\RPS{Rechte}{%
+	Die Rechte für den Zugriff auf Pakete oder Algorithmen werden nicht überprüft und der Einlogg-Mechanismus fehlt.%
+}{%
+Die Packete müssten ein Attribut für die Zugriffsrechte bereitstellen. Über den aktuell eingeloggten Benutzer könnten nun die Berechtigungen auf die jeweiligen Pakete geprüft werden.%
+}
+
+\RPS{Administrator}{%
+	Eine eigene Klasse für den "Administrator", der sich von den üblichen Usern abhebt, um seine Rechte und Funktionen bereitzustellen und zu organisieren, fehlt.%
+}{%
+Es sollte eine Klasse "Administrator" implementiert werden, die von der Klasse "User" erbt. Die Methoden für den Zugriff auf Dateien oder Packete müssten für diese "Administrator"-Klasse entsprechend angepasst werden.%
+}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
