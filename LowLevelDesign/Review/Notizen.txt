@@ -1,0 +1,12 @@
+Hallo Markus ist Luzifer
+
+-Verschlüsselung/Security sinnlos-nutzlos
+-Object unsinnvoll definiert
+-Parameter für Algorithmen fehlen
+-Anbindung an Weka fehlt
+-Download/Upload fehlt
+-Modelle können nicht verifiziert werden bzw keine Vorhersagen möglich
+-Objekte sind nicht serialisierbar.
+-Baumbart
+-Administrator fehlt?
+-
