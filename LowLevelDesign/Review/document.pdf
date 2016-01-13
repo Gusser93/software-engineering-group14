@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\title{Review Document -- Requirements Document}
+\author{David Klopp \and Christian Stricker \and Markus Vieth}
+\date{\today}
+%Requirement, Problem, Solution
+\newcommand{\RPS}[3]{\subsection{#1} \subsubsection*{Problem:} #2 \subsection*{Lösung:} #3} 
+
+\begin{document}
+\maketitle
+\cleardoublepage
+\tableofcontents 
+\newpage
+\section{Introduction}
+Der Gruppe 11 sind einige Fehler beim Formulieren des Low-Level Documents unterlaufen, welche im folgenden behandelt werde.
+\section{User-Requirements}
+
+\RPS{Klasse Object}{%
+Klassenname "Object" ist irreführend. Es könnte die Java Klasse Object gemeint sein, von der abgeleitet werden soll. %
+}{%
+Ändere den Klassennamen in "SystemObject" umd anzuzeugen, das eine eigene implementierte Klasse gemeint ist.%
+}
+
+\RPS{Sicherheit}{%
+	ClientCrypter und ServerCrypter sind unnötig, da eine Https-Verbindung zwischen Client und Server und zwischen verschiedenen Servern aufgebaut wird. Die Crypter würden außerdem innerhalb vom Server zwischen den Client und Server verschlüsseln, die Performance sinkt. %
+}{%
+ClientCrypter und ServerCrypter entfernen.%
+}
+
+\RPS{Sequenzdiagramm}{%
+	Die Funktion "getModel(id)" gehört zu dem PackageManager und nicht an das ModelInterface, es kann nicht das Interface aufrufen. Der PackageManager Existiert schon, bevor er vom ModelInterface aufgerufen wird. %
+}{%
+Funktion "getModel(id)" in den PackageManager packen und Startzeitpunkt des PackageManager nach hinten setzen.%
+}
+
+\RPS{Weka-Anbindung}{%
+	Eine Weka-Anbindung vom System fehlt komplett %
+}{%
+Weka-Library downloaden und eine mit einer Schnittstelle in das System integrieren%
+}
+
+\RPS{Klasse Object}{%
+	Problem %
+}{%
+Lösung%
+}
+
+\RPS{Klasse Object}{%
+	Problem %
+}{%
+Lösung%
+}
+
+\RPS{Klasse Object}{%
+	Problem %
+}{%
+Lösung%
+}
+
+\RPS{Klasse Object}{%
+	Problem %
+}{%
+Lösung%
+}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
