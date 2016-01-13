@@ -5,7 +5,7 @@
 \author{David Klopp \and Christian Stricker \and Markus Vieth \and Alisha Klein}
 \date{\today}
 %Requirement, Problem, Solution
-\newcommand{\RPS}[3]{\subsection{#1} \subsubsection*{Problem:} #2 \subsection*{Lösung:} #3} 
+\newcommand{\RPS}[3]{\subsection{#1} \subsubsection*{Problem:} #2 \subsubsection*{Lösung:} #3} 
 
 \begin{document}
 \maketitle
@@ -16,7 +16,7 @@
 Der Gruppe 11 sind einige Fehler beim Formulieren des Low-Level Documents unterlaufen, welche im Folgenden behandelt werde.
 \section{Low-Level-Design}
 
-\RPS{Klasse Object}{%
+\RPS{Klasse "Object"}{%
 Der Klassenname "Object" ist irreführend. Es könnte die Java Klasse Object gemeint sein, von der abgeleitet werden soll. %
 }{%
 Ändere den Klassennamen in "SystemObject" um zu verdeutlichen, dass eine eigene implementierte Klasse gemeint ist und um Sideeffects zu vermeiden.%
