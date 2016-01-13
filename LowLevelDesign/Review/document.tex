@@ -5,7 +5,7 @@
 \author{David Klopp \and Christian Stricker \and Markus Vieth \and Alisha Klein}
 \date{\today}
 %Requirement, Problem, Solution
-\newcommand{\RPS}[3]{\subsection{#1} \subsubsection*{Problem:} #2 \subsubsection*{Lösung:} #3} 
+\newcommand{\RPS}[3]{\pagebreak[3]\subsection{#1}\subsubsection*{Problem:}#2\subsubsection*{Lösung:}#3\pagebreak[3]}
 
 \begin{document}
 \maketitle
@@ -16,61 +16,87 @@
 Der Gruppe 11 sind einige Fehler beim Formulieren des Low-Level Documents unterlaufen, welche im Folgenden behandelt werde.
 \section{Low-Level-Design}
 
-\RPS{Klasse "Object"}{%
-Der Klassenname "Object" ist irreführend. Es könnte die Java Klasse Object gemeint sein, von der abgeleitet werden soll. %
+\RPS{Klasse \texttt{Object}}{%
+Der Klassenname \texttt{Object} ist irreführend. Es könnte die Java Klasse \texttt{Object} gemeint sein, von der abgeleitet werden soll. %
 }{%
-Ändere den Klassennamen in "SystemObject" um zu verdeutlichen, dass eine eigene implementierte Klasse gemeint ist und um Sideeffects zu vermeiden.%
+Ändere den Klassennamen in \texttt{SystemObject} um zu verdeutlichen, dass eine eigene implementierte Klasse gemeint ist und um ungewollte Nebeneffekte zu vermeiden.%
 }
 
 \RPS{Sicherheit}{%
-	"ClientCrypter" und "ServerCrypter" sind nicht notwendig, da eine verschlüsselte Https-Verbindung zwischen Client und Server und verschiedenen anderen Servern aufgebaut wird. Die "Crypter" würden außerdem innerhalb vom Server miteinander verschlüsselt kommunizieren, wodurch die Performance erheblich sinken würde. %
+	\texttt{ClientCrypter} und \texttt{ServerCrypter} sind nicht notwendig, da eine verschlüsselte HTTPS-Verbindung zwischen Client und Server und verschiedenen anderen Servern aufgebaut wird. Die \texttt{Crypter} würden außerdem innerhalb vom Server miteinander verschlüsselt kommunizieren, wodurch die Performance erheblich sinken würde. %
 }{%
-"ClientCrypter" und "ServerCrypter" können, ohne größere Nachteile vollständig entfernt werden.%
+\texttt{ClientCrypter} und \texttt{ServerCrypter} können, ohne größere Nachteile vollständig entfernt werden.%
 }
-
+\pagebreak
 \RPS{Sequenzdiagramm}{%
-	Die Funktion "getModel(id)" gehört zu der PackageManager Klasse und nicht zu dem "ModelInterface". Ein Interface ist nicht in der Lage dazu Methoden aufzurufen. Des weiteren ist das Sequenzdiagramm zur Package Generierung in diesem Punkte ebenfalls falsch, da die Lebenszeit der Objekte falsch eingetragen wurde. (z.B Der "PackageManager" existiert vor dem "ModelInterface".%
+	Die Funktion \texttt{getModel(id)} gehört zu der \texttt{PackageManager} Klasse und nicht zu dem \texttt{ModelInterface}. Des weiteren ist das Sequenzdiagramm zur \texttt{Package} Generierung in diesem Punkte ebenfalls falsch, da die Lebenszeit der Objekte fehlerhaft eingetragen wurde. (z.B Der \texttt{PackageManager} existiert vor dem \texttt{ModelInterface} und einige Klassen existieren, bevor diese erstellt werden.)%
 }{%
-Die Funktion "getModel(id)" sollte im PackageManager implementiert werden. Die Lebenszeit der Objekte muss angepasst werden, so dass der "PackageManager" vor dem "ModelInterface" existiert.%
+Die Funktion \texttt{getModel(id)} sollte im \texttt{PackageManager} implementiert werden. Die Lebenszeit der Objekte muss angepasst werden, so dass der \texttt{PackageManager} vor dem \texttt{ModelInterface} existiert.%
 }
 
 \RPS{Weka-Anbindung}{%
 	Eine Anbindung der Weka-Library an das System fehlt vollständig. %
 }{%
-Die Weka-Library müsste derart an das System angebunden werden, dass eine  Schnittstelle zur Verfügung steht die auf Basis der Klassen des Servers operieren kann.%
+Die Weka-Library müsste derart an das System angebunden werden, dass eine Schnittstelle zur Verfügung steht die auf Basis der Klassen des Servers operieren kann.%
 }
 
 \RPS{Upload und Download}{%
-	Datensätze und Algorithmen können nicht hochgeladen und erstellte Pakete nicht gedownloaden werden. %
+	Datensätze und Algorithmen können nicht hochgeladen und erstellte Pakete nicht heruntergeladen werden. %
 }{%
-Es müssen Funktionen im "PackageManger" und den anderen entsprechenden Klassen bereitgestellt werden die die Funktionen für den Datei Up/Download implementieren.%
+Es müssen Funktionen im \texttt{PackageManger} und den anderen entsprechenden Klassen bereitgestellt werden, welche die Funktionen für den Datei Up/Download implementieren.%
 }
-
+\pagebreak
 \RPS{Rechte}{%
-	Die Rechte für den Zugriff auf Pakete oder Algorithmen werden nicht überprüft und der Einlogg-Mechanismus fehlt.%
+	Die Rechte für den Zugriff auf Pakete oder Algorithmen werden nicht überprüft und der Login-Mechanismus fehlt.%
 }{%
-Die Packete müssten ein Attribut für die Zugriffsrechte bereitstellen. Über den aktuell eingeloggten Benutzer könnten nun die Berechtigungen auf die jeweiligen Pakete geprüft werden.%
+Die Pakete müssten ein Attribut für die Zugriffsrechte bereitstellen. Über den aktuell angemeldeten Benutzer könnten nun die Berechtigungen auf die jeweiligen Pakete geprüft werden.%
 }
 
 \RPS{Administrator}{%
-	Eine eigene Klasse für den "Administrator", der sich von den üblichen Usern abhebt, um seine Rechte und Funktionen bereitzustellen und zu organisieren, fehlt.%
+	Eine eigene Klasse für den "`Administrator"', der sich von den üblichen Usern abhebt, um seine Rechte und Funktionen bereitzustellen und zu organisieren, fehlt.%
 }{%
-Es sollte eine Klasse "Administrator" implementiert werden, die von der Klasse "User" erbt. Die Methoden für den Zugriff auf Dateien oder Packete müssten für diese "Administrator"-Klasse entsprechend angepasst werden.%
+Es sollte eine Klasse "`Administrator"' implementiert werden, die von \texttt{User} erbt oder eine andere Methode, welche eine Identifizierung des Administrators erlaubt. Die Methoden für den Zugriff auf Dateien oder Pakete müssten für diese "`Administratoren"' entsprechend angepasst werden.%
 }
 
 \RPS{Parameter für Algorithmen fehlen}{%
 Durch die vorhandenen Klassen wird keine Option bereitgestellt, um festzustellen mit welchen Parameter ein Algorithmus umgehen kann.%
 }{%
-Man könnte der Klasse "Algorithm" ein Attribut hinzufügen, welches die unterstützten Parameter in einer Liste speichert.%
+Man könnte der Klasse \texttt{Algorithm} ein Attribut hinzufügen, welches die unterstützten Parameter in einer Liste speichert.%
 }
-
+\pagebreak
 \RPS{Serialisierbarkeit}{%
-Die Klassen "Package" und "Model" sind nicht serialisierbar, obwohl dies explizit im Requirementsdocument gefordert war.
+Die Klassen \texttt{Package} und \texttt{Model} sind nicht serialisierbar, obwohl dies explizit im Requirements-Document gefordert ist.
 }{%
-Die Klasse "Package" und die Klasse "Model" müssen das Interface "Serializable" implementieren und ihre Attribute entsprechend anpassen. Des weiteren sollte eine Methode bereitgestellt werden, die diese Objekte in eine Datei schreibt, um so weiter Operationen mit diesen Dateien zu ermöglichen.
+Die Klassen \texttt{Package} und \texttt{Model} müssen das Interface \texttt{Serializable} implementieren und ihre Attribute entsprechend anpassen. Des weiteren sollte eine Methode bereitgestellt werden, die diese Objekte in eine Datei schreibt, um so weiter Operationen mit diesen Dateien zu ermöglichen.
 }
 
+\RPS{Datensatz}{%
+	Die Klasse \texttt{Dataset} speichert eine Liste Parameter, obwohl diese nicht benötigt wird.
+}{%
+Man lösche das Attribut \texttt{Parameter}.
+}
 
+\RPS{Generics}{%
+	Im gesamten Dokument werden Generics falsch verwendet. Wenn sie eingesetzt werden, z.B. in \texttt{Model}, anschließend wird nicht definiert, um welche Klasse es sich handelt, da \texttt{Model} selbst nicht parametrisiert ist. Parametrisierte Klassen wie List dagegen werden durchgehend nicht parametrisiert, welches gegen gängigen Standards (siehe UR024) verstößt. 
+}{%
+Man passe die Generics in allen Fällen an.
+}
+\pagebreak
+\RPS{Modell}{%
+	Der Klasse \texttt{Model} fehlen die Attribute, um sowohl Parameter, als auch Algorithmus und Datensatz zu speichern, welche an seiner Erstellung beteiligt waren. Diese Information wird benötigt, um die Funktion zu gewährleisten, dass der Nutzer informiert wird, wenn dieser ein Modell wiederholt erstellen möchte, welches unter genau den gleichen Bedingungen bereits erstellt wurde und er die Berechtigung besitzt es zu lesen.
+}{%
+Man füge die benötigten Attribute hinzu.
+}
+\RPS{ID}{%
+	Die Parameter \texttt{id} der Klasse \texttt{Database} sollte vom Typ \texttt{URI} sein und nicht vom Typ \texttt{long}, um die Kompatibilität mit der Datenbank zu gewährleisten.
+}{%
+Man ändere das Attribut in den entsprechenden Methoden.
+}
+\RPS{Konstruktor}{%
+	Zu keiner Klasse ist ein Konstruktor angegeben, welcher spezifiziert, wie eine Klasse erzeugt werden kann. Klassen wie \texttt{User}, welchen teilweise Setter für einige Attribute fehlen, müssten allerdings einen anderen, als den Standard-Konstrukter benötigen.
+}{%
+Man ergänze den Konstruktor in den entsprechenden Klassen.
+}
 \end{document}
 
 %%% Local Variables:
