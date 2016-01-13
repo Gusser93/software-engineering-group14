@@ -58,6 +58,18 @@ Die Packete müssten ein Attribut für die Zugriffsrechte bereitstellen. Über d
 Es sollte eine Klasse "Administrator" implementiert werden, die von der Klasse "User" erbt. Die Methoden für den Zugriff auf Dateien oder Packete müssten für diese "Administrator"-Klasse entsprechend angepasst werden.%
 }
 
+\RPS{Parameter für Algorithmen fehlen}{%
+Durch die vorhandenen Klassen wird keine Option bereitgestellt, um festzustellen mit welchen Parameter ein Algorithmus umgehen kann.%
+}{%
+Man könnte der Klasse "Algorithm" ein Attribut hinzufügen, welches die unterstützten Parameter in einer Liste speichert.%
+}
+
+\RPS{Serialisierbarkeit}{%
+Die Klassen "Package" und "Model" sind nicht serialisierbar, obwohl dies explizit im Requirementsdocument gefordert war.
+}{%
+Die Klasse "Package" und die Klasse "Model" müssen das Interface "Serializable" implementieren und ihre Attribute entsprechend anpassen. Des weiteren sollte eine Methode bereitgestellt werden, die diese Objekte in eine Datei schreibt, um so weiter Operationen mit diesen Dateien zu ermöglichen.
+}
+
 
 \end{document}
 

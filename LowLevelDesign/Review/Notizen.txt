@@ -7,6 +7,5 @@ Hallo Markus ist Luzifer
 -Download/Upload fehlt
 -Modelle können nicht verifiziert werden bzw keine Vorhersagen möglich
 -Objekte sind nicht serialisierbar.
--Baumbart
 -Administrator fehlt?
 -
