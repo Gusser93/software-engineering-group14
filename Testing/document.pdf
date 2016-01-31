@@ -1,0 +1,67 @@
+\documentclass{beamer}
+\usepackage[ngerman]{babel}			%Deutsche Umlaute und Umbrüche
+\usepackage[utf8]{inputenc}			%utf8 Kodierung
+\usepackage{amsmath, amsfonts, amssymb, ulem, epstopdf} %Mathepackete schaden nie
+\usetheme{Dresden}
+\usecolortheme{beaver}
+\usefonttheme{professionalfonts}
+\title[Tofuml]{Tofuml}
+\subtitle{Testcase}
+\author[C. Stricker\and A. Klein\and D. Klopp\and M. Vieth]{Christian Stricker\and Alisha Klein\and David Klopp\and Markus Vieth}
+\date[\today]{\today}
+\subject{Software engineering}
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+\setcounter{tocdepth}{2}
+%Link zum Beamer-Userguid: ftp://ftp.dante.de/tex-archive/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+\begin{document}
+	
+	\frame{
+		\titlepage
+	}
+	\setbeamertemplate{footline}[frame number]
+	
+	\frame[label=IV]{
+		\frametitle{Inhaltsverzeichnis}
+		\tableofcontents
+		[pausesections]
+	}
+	
+	\section{Test-Kategorien}
+	\begin{frame}{Komponententest}
+		\begin{itemize}
+			\item auch Unittest genannt
+			\item Testet einzelne Module
+			\item Funktionalität abgrenzbarer Teile der Software
+			
+		\end{itemize}
+	\end{frame}	
+	\begin{frame}{Integrationstest}
+		\begin{itemize}
+			\item Interaktionstest genannt
+			\item Zusammenarbeit von abhängigen Komponenten
+			\item Testet Schnittstellen	
+			\item Nachweis von Korrekten Ergebnissen über komplette Abläufe des Programms
+		\end{itemize}
+	\end{frame}
+	\begin{frame}{Systemtest}
+	\begin{itemize}
+		\item Testet gesamtes System gegen gesamte Anforderung (Function/non-Function-Requirements)	
+		\item Testen mit Testdaten
+		\item Kundenbenutzungssimulation
+	\end{itemize}
+	\end{frame}	
+	\begin{frame}{Abnahmetest}
+		\begin{itemize}
+			\item Getestet vom Kunden
+			\item Positiver Test für rechtswirksame Übernahme
+			\item Test auf Produktionsumgebung mit meist echten Testdaten
+			\item Blackboxverfahren
+		\end{itemize}
+	\end{frame}
+	
+		\section{Unsere Testfälle}
+		\begin{frame}{Baum}
+			
+		\end{frame}	
+		
+\end{document}
